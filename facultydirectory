@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="html"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+	
+	<!-- com.omniupdate.properties -->
+	<title>Faculty</title>
+	<!-- /com.omniupdate.properties -->
+	
+	<config>
+	<!-- com.omniupdate.properties -->
+	<parameter name="breadcrumb" group="Everyone" prompt="Breadcrumb" alt="Defines the breadcrumb, otherwise the page title will be used."></parameter>
+<parameter name="page-heading" group="Everyone" prompt="Page Heading" alt="Defines the text used as the page heading for the main content region.">faculty and staff</parameter>
+	<parameter name="callout" group="Everyone" type="radio" prompt="Callout Section" alt="Enables or disables the callout region found within the main content.">
+<option value="true" selected="false">On</option>
+<option value="false" selected="true">Off</option>
+</parameter>
+	<parameter name="action-btn" group="Everyone" type="radio" prompt="Action Buttons" alt="Enables or disables the action buttons found within the main content region.">
+<option value="true" selected="false">On</option>
+<option value="false" selected="true">Off</option>
+</parameter>
+	<parameter name="featured" group="Everyone" type="radio" prompt="Featured Content" alt="Enables or disables the featured content region found below the main content.">
+<option value="true" selected="false">On</option>
+<option value="false" selected="true">Off</option>
+</parameter>
+	
+	<parameter section ="Main Image Settings" name="main-image" group="Everyone" type="radio" prompt="Main Image" alt="Enables or disales the main image above the main content.">
+<option value="image" selected="false">Main Image</option>
+<option value="none" selected="true">None</option>
+</parameter>
+	<parameter name="image-loc" group="Everyone" type="radio" prompt="Image Location" alt="Determines if the page will use the image defined by the directory variable, or an editable region on page level">
+<option value="inherit" selected="true">Inherit from directory</option>
+<option value="local" selected="false">Page level</option>
+</parameter>
+	<parameter name="nav-adjust" group="Everyone" type="radio" prompt="Left Navigation Adjust" alt="If 'adjust' is selected, the left navigation will be moved up into the main image." >
+<option value="default" selected="true">Default</option>
+<option value="adjust" selected="false">Adjust</option>
+</parameter>	
+	
+	<!-- /com.omniupdate.properties -->
+	</config>
+	
+	<metadata>
+	<!-- com.omniupdate.properties -->
+		<meta name="description" content="" />
+	<!-- /com.omniupdate.properties -->
+	</metadata>	
+	
+	<maincontent>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- com.omniupdate.div  label="maincontent"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955"/ --><style><!--
+
+.person {
+  padding: 1em;
+  margin: 0.5em auto;
+  /*border: 1px dotted #e9e9e9;*/
+  float: left;
+}
+.person-name {
+  font-family: georgia;
+  text-transform: uppercase;
+  font-size: 1em;
+  vertical-align: top;
+  padding-top: 0;
+  margin-top: 0;
+}
+.person-title {
+  font-family: "georgia";
+  text-transform: uppercase;
+  color: #999;
+
+  
+}
+    .person-contact {
+  font-family: "georgia";
+  color: #999;
+      font-size:0.7em
+  
+}
+.person-image {
+  max-width:125px;
+  float: right;
+      border-radius:50%;
+
+}
+.person-description {
+  font-family: georgia;
+ padding: 0;
+      margin-top:25px;
+      margin-left:5px;
+}
+     #contact {
+      font-family:georgia; 
+      font-size:0.8em
+    }
+      .contactlink {
+  font-family: georgia;
+ padding: 0;
+      margin-right:5px;
+color:#003399;
+}
+--></style>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="rectangle">
+				<div class="person">
+				<h3 class="person-name">Beena Acchpal<img class="person-image" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/beena.jpg" alt="" /> </h3>
+				<h4 class="person-title">Professor</h4>
+					<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
+						
+					</div>
+				<p class="person-contact">(203) 392-6706<br />Davis 115D</p>
+				</div>
+				<div>
+					<p class="person-description">Beena Achhpal (Ph.D., University of Connecticut) is a teacher and researcher interested in early childhood development.</p>
+				</div>	
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="rectangle">
+				<div class="person">
+					<h3 class="person-name">Laura Bower-Phipps<img class="person-image" src="http://www.redesignu.org/sites/default/files/styles/medium__square/public/block_images/blank%20profile%20of%20woman_2.jpeg" alt="" /> </h3>
+					<h4 class="person-title">Associate Professor</h4>
+				<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
+				</div>
+					<p class="person-contact">(203) 392-7298<br />Davis 209D</p>
+				</div>
+				<div>
+					<p class="person-description">Laura Bower-Phipps(Ph.D., University of Nevada) is a teacher and researcher interested in gender and sexual diversity.</p>
+				</div>	
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="rectangle">
+				<div class="person">
+				<h3 class="person-name">Cheryl Dickinson<img class="person-image" style="margin-left: 5px;" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/cheryl.jpg" alt="" /> </h3>
+				<h4 class="person-title">Professor</h4>
+				<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
+				</div>
+				<p class="person-contact">(203) 392-6484<br />Davis 210F</p>
+				</div>
+				<div>
+					<p class="person-description">Cheryl Dickinson (Ed.D., University of Pennsylvania) is a teacher and researcher in reading comprehension.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">	
+			<div class="rectangle">
+				<div class="person">
+					<h3 class="person-name">Joy Fopiano<img class="person-image" style="margin-left: 10px; margin-top: 20px;" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/joy.jpg" alt="" /> </h3>
+					<h4 class="person-title">Associate Professor</h4>
+						<div id="contact"><!--<a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>--></div>
+					<p class="person-contact">(203) 392-5915<br />Davis 210C</p>
+				</div>
+				<div>
+					<p class="person-description">Joy Fopiano (Ed.D., University of Massachussetts) is a teacher and researcher in mental health counseling.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">	
+			<div class="rectangle">
+				<div class="person">
+					<h3 class="person-name">Adam Goldberg<img class="person-image" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/Goldberg.jpg" alt="" /> </h3>
+					<h4 class="person-title">Professor</h4>
+					<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
+					</div>
+					<p class="person-contact">(203) 392-6442<br />Davis 209D</p>
+				</div>
+					<div>
+						<p class="person-description">Adam Goldberg (Ed.D., Columbia Universiy) is a teacher and researcher in integrating technology into math education.</p>
+					</div>	
+			</div>
+		</div>
+		<div class="col-md-4">	
+			<div class="rectangle">
+				<div class="person">
+					<h3 class="person-name">Steven Greengross<img class="person-image" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/greengross.jpg" alt="" /> </h3>
+					<h4 class="person-title">Professor</h4>
+					<h3 class="person-name">Department Chair</h3>
+						<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
+					</div>
+					<p class="person-contact">(203) 392-6424<br />Davis 116A</p>
+				</div>
+					<div>
+						<p class="person-description">Steven Greengross (Ed.D., Boston Universiy) is a teacher and researcher in teacher preparation.</p>
+					</div>
+			</div>
+		</div>
+	</div>		
+	<div class="row">
+		<div class="col-md-4">
+			<div class="rectangle">
+				<div class="person">
+					<h3 class="person-name">David Levande<img class="person-image" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/levande.jpg" alt="" /> </h3>
+					<h4 class="person-title">Professor</h4>
+						<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
+						</div>
+						<div>
+						<p class="person-contact">(203) 392-6429<br />Davis 115C</p>
+						</div>
+						<div>
+							<p class="person-description">David Levande (Ed.D., Columbia Universiy) is a teacher and researcher in urban education.</p>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">		
+			<div class="rectangle">
+				<div class="person">
+					<h3 class="person-name">Helen Marx<img class="person-image" style="margin-top: 15px;" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/marx.jpg" alt="" /> </h3>
+					<h4 class="person-title">Associate Professor</h4>
+					<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
+					</div>
+					<p class="person-contact">(203) 392-6654<br />Davis 115G</p>
+				</div>
+				<div>
+				<p class="person-description" style="margin-top: 15px;">Helen Marx, undergraduate coordinator, (Ph.D., University of Connecticut) is a teacher and researcher in urban and international education.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="rectangle">
+				<div class="person">
+					<h3 class="person-name">J. Gregory McVerry<img class="person-image" style="margin-left: 5px;" src="http://jgregorymcverry.com/wp-content/uploads/2015/01/headshot1-54c7887fv1_site_icon.png" alt="" /> </h3>
+					<h4 class="person-title">Assistant Professor</h4>
+				<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
+				</div>
+				<p class="person-contact">(203) 392-6553<br />Davis 209D</p>
+				</div>
+				<div>
+					<p class="person-description">J. Gregory McVerry (Ph.D., University of Connecticut) is a teacher and researcher interested in literacy and technology.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">	
+			<div class="rectangle">
+				<div class="person">
+				<h3 class="person-name">Joel Meisel<img class="person-image" style="margin-left: 10px; margin-top: 20px;" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/meisel.jpg" alt="" /> </h3>
+				<h4 class="person-title">Professor</h4>
+					<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
+					</div>
+			<p class="person-contact">(203) 392-6443<br />Davis 115F</p>
+				</div>
+				<div>
+				<p class="person-description">Joel Meisel (Ph.D., University of Connecticut) is a teacher and researcher in science education.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">				
+			<div class="rectangle">
+			<div class="person">
+				<h3 class="person-name">Carlos Torre<img class="person-image" style="margin-left: 5px; margin-top: 10px;" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/torre.jpg" alt="" /> </h3>
+				<h4 class="person-title">Professor</h4>
+					<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>--></div>
+			<p class="person-contact">(203) 392-5897<br />Davis 115F</p>
+			</div>
+			<div>
+				<p class="person-description">Carlos Torre (Ph.D., Harvard University) is a teacher and researcher in creativity and chaos theory.</p>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-4">	
+			<div class="rectangle">
+				<div class="person">
+					<h3 class="person-name">Christine Villani<img class="person-image" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/villani.jpg" alt="" /> </h3>
+					<h4 class="person-title">Professor</h4>
+				<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
+				</div>
+					<p class="person-contact">(203) 392-5343<br />Davis 116B</p>
+				</div>
+				<div>
+					<p class="person-description">Christine Villani, Graduate Coordinator (Ed.D., Fordham University) is a teacher and researcher in educational law.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+	<!-- /com.omniupdate.div -->
+	</maincontent>
+	
+	<main-image>
+	<!-- com.omniupdate.div  label="main-image"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/main-image.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
+	<img src="/_resources/images/gen-content-level-2-big-img.jpg" alt="landing image" />
+	<!-- /com.omniupdate.div -->
+	</main-image>
+	
+	<main-feature>
+	<!-- com.omniupdate.div  label="main-feature"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/maincontent.css" width="955" -->
+	<table>
+		<tbody>
+			<tr><th>Image</th><th>Info</th></tr>
+			<tr>
+				<td><img src="/_resources/images/ac-landing-arts-sciences.jpg" alt="A woman using lab equipment" /></td>
+				<td>
+				<h2>The heart of the university</h2>
+				<h3>School of Arts &amp; Sciences</h3>
+				<a href="#">Learn More</a>
+				</td>
+			</tr>
+			<tr>
+			<td><img src="/_resources/images/ac-landing-business-school.jpg" alt="A diagram on a chalkboard" /></td>
+				<td>
+				<h2>Prepare yourself</h2>
+				<h3>School of Business</h3>
+				<a href="#">Learn More</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/_resources/images/ac-landing-school-ed.jpg" alt="Students raising their hand" /></td>
+				<td>
+				<h2>Passionate about teaching</h2>
+				<h3>School of Education</h3>
+				<a href="#">Learn More</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/_resources/images/ac-landing-health-human.jpg" alt="A medical professional" /></td>
+				<td>
+				<h2>A mission of caring</h2>
+				<h3>School of Health &amp;<br />Human Sciences</h3>
+				<a href="#">Learn More</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- /com.omniupdate.div -->	
+	</main-feature>
+	
+	<action-btns>
+	<!-- com.omniupdate.div  label="action-btns"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/action-btns.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
+	<a href="#apply">Apply Now</a>
+	<a href="#visit">Visit Campus</a>
+	<!-- /com.omniupdate.div -->
+	</action-btns>
+	
+	<callout>
+	<!-- com.omniupdate.div  label="callout"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/callout.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
+	<h2>Application Deadline</h2>
+	<p>April 1, 2012</p>
+	<!-- /com.omniupdate.div -->
+	</callout>
+		
+	<featured-content>
+	<!-- com.omniupdate.div  label="featured-content1"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/featured-content.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
+	<img src="/_resources/images/gen-content-level2-talk-couns.jpg" alt="An admissions counselor helping a student" />
+	<a href="#">Talk to an admissions counselor</a>
+	<!-- /com.omniupdate.div -->
+	</featured-content>
+	<featured-content>
+	<!-- com.omniupdate.div  label="featured-content2"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/featured-content.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
+	<img src="/_resources/images/gen-content-level2-dlviewbook.jpg" alt="The cover of the SCSU Viewbook" />
+	<a href="#">Download the viewbook</a>
+	<!-- /com.omniupdate.div -->
+	</featured-content>
+	
+	
+</document>
