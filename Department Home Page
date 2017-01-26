@@ -8,13 +8,13 @@
 	<footcode></footcode>
 	
 	<!-- com.omniupdate.properties -->
-	<title>Department of Curriculum and Learning (Elementary Education)</title>
+	<title>Department of Curriculum and Learning</title>
 	<!-- /com.omniupdate.properties -->
 	
 	<config>
 	<!-- com.omniupdate.properties -->
 	<parameter name="breadcrumb" group="Everyone" prompt="Breadcrumb" alt="Defines the breadcrumb, otherwise the page title will be used."></parameter>
-<parameter name="page-heading" group="Everyone" prompt="Page Heading" alt="Defines the text used as the page heading for the main content region.">Department of Curriculum and Learning (Elementary Education)</parameter>
+<parameter name="page-heading" group="Everyone" prompt="Page Heading" alt="Defines the text used as the page heading for the main content region.">Department of Curriculum and Learning </parameter>
 	<parameter name="callout" group="Everyone" type="radio" prompt="Callout Section" alt="Enables or disables the callout region found within the main content.">
 <option value="true" selected="false">On</option>
 <option value="false" selected="true">Off</option>
@@ -46,181 +46,72 @@
 	
 	<metadata>
 	<!-- com.omniupdate.properties -->
-		<meta name="description" content="Elementary Education Department at Southern Connecticut State  University." />
+		<meta name="description" content="Curriculum and Learning Department at Southern Connecticut State  University." />
 	<!-- /com.omniupdate.properties -->
 	</metadata>	
 	
 	<maincontent>
 	<!-- com.omniupdate.div  label="maincontent"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955"/ --><style type="text/css"><!--
-.leftCol {
-width: 460px;
-float: left;
-}
 
-.rightCol {
-width: 220px;
-float: left;
-}
-
-.ytBox {
-width: 320px;
-margin: 10px;
-float: left;
-text-align: center;
-}
- 
-
-#twitter-widget-0 {
-width: 220px;
-}
- #contentWrapper2 {
-	height: 300px;
-	width: 640px;
-	overflow: hidden;
-	padding: 0;
-	background-color: white;
-}
-
-#slideWrapper2 {
-	height: 300px;
-	width: 640px;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	background-color: white;
-}
-
-#slideReel2 {
-	height: 300px;
-	width: 3200px;
-	margin: 0;
-	padding: 0;
-	background-color: white;
-	-webkit-animation-play-state: running;
-	-webkit-animation-name: slideIt;
-	-webkit-animation-duration: 19000ms;
-	-webkit-transform-origin: 50% 50%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in-out;
-}
-
-  /*#slideReel2:hover{
-	margin-left:-640px;
-}*/
-
-.slide {
-	float: left;
-	height: 300px;
-	width: 640px;
-	margin: 5px;
-	padding: 0px;
-	background-color: #white;
-	max-width: 100%;
-	max-height: 100%;
-}
-
-#contentWrapper:hover #slideReel2 {
-	-webkit-animation-play-state: paused;
-}
-
-@-webkit-keyframes slideIt {
-	0% {
-		-webkit-transform: translate(0px);
-	}
-	
-	5% {
-		-webkit-transform: translate(0px);
-	}
-	
-	20% {
-		-webkit-transform: translate(-660px);
-	}
-	
-	40% {
-		-webkit-transform: translate(-1300px);
-	}
-	
-	60% {
-		-webkit-transform: translate(-1940px);
-	}
-
-        100% { -webkit-transform: translate(-1940px);
-	}
-	
-	
-	
-	
-}
-#slide1 {
-	background-image: url(https://pbs.twimg.com/media/CCAkEkUWMAEmEW_.jpg);
-}
-#slide2 {
-	background-image: url(http://go.southernct.edu/elementary-education/wp-content/uploads/2015/02/Federeko.jpg);
-}
-
-
-#slide3 {
-	background-image: url(http://go.southernct.edu/elementary-education/wp-content/uploads/2015/02/AERAAWARD.jpg);
-}
-
-#slide4 {
-	background-image: url(http://go.southernct.edu/elementary-education/wp-content/uploads/2015/02/GateInfo.jpg);
-}
-
-#slide5 {
-	background-image: url(http://go.southernct.edu/elementary-education/wp-content/uploads/2015/02/latinfilmfest.jpg);
-}
-
-
-
-.slidelink {
-	float: right;
-	margin-top: 230px;
-	margin-right: 20px;
-	font-size: 26px;
-	background: rgb(0,0,0);
-    color: white;
-    opacity: 0.7;
-}
 --></style>
-<!--<div id="contentWrapper2">
-<div id="slideWrapper2">
-<div id="slideReel2">
-<div id="slide1" class="slide"><span class="slidelink" style="margin-top: 200px;"><a style="color: white;" href="http://go.southernct.edu/elementary-education/?p=48">Dr. McVerry Helps to #TeachTheWeb Globally</a></span></div>
-<div id="slide2" class="slide"><span class="slidelink" style="margin-top: 200px;"><a style="color: white;" href="http://go.southernct.edu/elementary-education/?p=41">Undergraduate Researcher Speaks at National Conference</a></span></div>
-<div id="slide3" class="slide"><span class="slidelink"><a style="color: white;" href="http://go.southernct.edu/elementary-education/?p=37">Faculty Win AERA Research Award</a></span></div>
-<div id="slide4" class="slide"><span class="slidelink"><a style="color: white;" href="http://go.southernct.edu/elementary-education/?p=34">Dept to Hold Info Meetings</a></span></div>
-<div id="slide5" class="slide"><span class="slidelink"><a style="color: white;" href="http://go.southernct.edu/elementary-education/?p=35">5th Annual Latino and Native American Film Festival</a></span></div>
-</div>
-</div>
-</div>--> <a title="Cambodia Teaching by Polly Butler" href="http://flickr.com/photos/frontierofficial/8003185888"><img src="http://farm9.static.flickr.com/8297/8003185888_52f2dca3a0_z.jpg" alt="" /></a><br /><small><a title="Cambodia Teaching by Polly Butler" href="http://flickr.com/photos/frontierofficial/8003185888">flickr photo</a> shared by <a href="http://flickr.com/people/frontierofficial">Frontierofficial</a> under a <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons ( BY ) license</a> </small>
-		<h3><a href="http://tiny.cc/educationadvising" target="_blank">Pre Enrollment Advising Starts Soon. Visit the link  to sign up</a></h3>
-		
-<div class="leftCol">
-<p style="text-align: center;"><span style="font-size: 14px; line-height: 1.6;">&nbsp;</span><a style="line-height: 1.6; background-color: transparent;" href="https://www.facebook.com/SCSUEduDepartment"><img src="/_resources/images/facebook-icon.png" alt="facebook link" width="32" height="32" /></a><span style="font-size: 14px; line-height: 1.6;">&nbsp;</span><a style="line-height: 1.6; background-color: transparent;" href="https://twitter.com/scsuedudept" target="_blank"><img src="/_resources/images/twitter-icon.png" alt="twitter link" width="32" height="32" /></a><span style="font-size: 14px; line-height: 1.6;">&nbsp;</span><a style="line-height: 1.6; background-color: transparent;" href="https://www.youtube.com/channel/UCWR9IXUabxxjCiiG7iZC8hg" target="_blank"><img src="/academics/schools/education/departments/elementaryeducation/icon_grey_youtube2.jpg" alt="youtubelink" width="32" height="32" /></a></p>
-<p>We are located in the School of Education, a professional school whose mission is to advance the science and art of the teaching and learning process.&nbsp;</p>
-<p>&nbsp;We strive to maintain a high standard of excellence in our programs and seek to develop well-qualified graduates committed to lifelong learning, intellectual honesty, personal integrity, and respect for the rights and freedom of others.&nbsp;</p>
-<h1><a href="{{f:12149892}}">Undergraduate</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="{{f:12149876}}">Graduate</a> &nbsp;</h1>
-<h1><img src="/academics/schools/education/departments/elementaryeducation/10_SCSU_School%20of%20Ed-0140fw.jpg" alt="photo" width="428" height="214" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h1>
-<p><span>Department Chairperson: Dr. Steven Greengross,</span><br /><span>Chairperson Department of Education,</span><br /><span>Davis Hall 116B</span><br /><span>Southern Connecticut State University New Haven, CT 06515</span><br /><span>Telephone: (203) 392-6430 Fax: (203) 392-6473&nbsp;</span><br /><span>E-Mail:&nbsp;</span><a href="mailto:greengrosss1@southernct.edu" target="_blank">greengrosss1@southernct.edu</a></p>
-</div>
-<div class="rightCol">
-<p><a class="twitter-timeline" href="https://twitter.com/SCSUEduDept" data-widget-id="457183257230974976">Tweets by @SCSUEduDept</a>
-<script type="text/javascript">// <![CDATA[
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-// ]]></script>
-</p>
-</div>
-<div class="clear">&nbsp;</div><!-- /com.omniupdate.div -->	
-		
-		
-	<!-- com.omniupdate.div  label="Videos"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955"/ -->
-		
-		
-<div class="ytBox"><iframe src="//www.youtube.com/embed/smAnHflVOdY?rel=0" frameborder="0" width="280" height="168">&nbsp;</iframe></div>
-<div class="ytBox"><iframe src="//www.youtube.com/embed/waM_L2FxzGQ?rel=0" frameborder="0" width="280" height="168">&nbsp;</iframe></div>
-<div class="ytBox"><iframe src="//www.youtube.com/embed/zxJq6OyPfNs?rel=0" frameborder="0" width="280" height="168">&nbsp;</iframe></div>
-<div class="ytBox"><iframe src="//www.youtube.com/embed/ILw4aD_eOlY?rel=0" frameborder="0" width="280" height="168">&nbsp;</iframe></div><!-- /com.omniupdate.div -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<a title="Cambodia Teaching by Polly Butler" href="http://flickr.com/photos/frontierofficial/8003185888"><img class="img-responsive center-block" src="http://farm9.static.flickr.com/8297/8003185888_52f2dca3a0_z.jpg" alt="" /></a><br /><small><a title="Cambodia Teaching by Polly Butler" href="http://flickr.com/photos/frontierofficial/8003185888">flickr photo</a> shared by <a href="http://flickr.com/people/frontierofficial">Frontierofficial</a> under a <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons ( BY ) license</a> 
+			</small>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;
+		</div>
+		<div class="col-md-4">
+			<p style="text-align: center;">
+				<span style="font-size: 14px; line-height: 1.6;">&nbsp;</span><a style="line-height: 1.6; background-color: transparent;" href="https://www.facebook.com/SCSUEduDepartment"><img src="/_resources/images/facebook-icon.png" alt="facebook link" width="32" height="32" /></a><span style="font-size: 14px; line-height: 1.6;">&nbsp;</span><a style="line-height: 1.6; background-color: transparent;" href="https://twitter.com/scsuedudept" target="_blank"><img src="/_resources/images/twitter-icon.png" alt="twitter link" width="32" height="32" /></a><span style="font-size: 14px; line-height: 1.6;">&nbsp;</span><a style="line-height: 1.6; background-color: transparent;" href="https://www.youtube.com/channel/UCWR9IXUabxxjCiiG7iZC8hg" target="_blank"><img src="/academics/schools/education/departments/elementaryeducation/icon_grey_youtube2.jpg" alt="youtubelink" width="32" height="32" /></a></p>
+		</div>
+		<div class="col-md-4">&nbsp;
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8">
+			<p>We are located in the School of Education, a professional school whose mission is to advance the science and art of the teaching and learning process.&nbsp;</p>
+			<p>&nbsp;We strive to maintain a high standard of excellence in our programs and seek to develop well-qualified graduates committed to lifelong learning, intellectual honesty, personal integrity, and respect for the rights and freedom of others.&nbsp;</p>
+			<a href="{{f:12149892}}" class="btn btn-primary">Undergraduate</a><a href="{{f:12149876}}" class="btn btn-primary">Graduate</a>
+			<img class="img-responsive center-block" src="/academics/schools/education/departments/elementaryeducation/10_SCSU_School%20of%20Ed-0140fw.jpg" alt="photo" /> 
+			<p><span>Department Chairperson: Dr. Steven Greengross,</span><br /><span>Chairperson Department of Education,</span><br /><span>Davis Hall 116B</span><br /><span>Southern Connecticut State University New Haven, CT 06515</span><br /><span>Telephone: (203) 392-6430 Fax: (203) 392-6473&nbsp;</span><br /><span>E-Mail:&nbsp;</span><a href="mailto:greengrosss1@southernct.edu" target="_blank">greengrosss1@southernct.edu</a></p>
+		</div>
+		<div class="<div class="col-md-4">">
+			<p><a class="twitter-timeline" href="https://twitter.com/SCSUEduDept" data-widget-id="457183257230974976">Tweets by @SCSUEduDept</a>
+			<script type="text/javascript">// <![CDATA[
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+			// ]]></script>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="embed-responsive embed-responsive-16by9">
+  				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/smAnHflVOdY?rel=0" frameborder="0" width="280" height="168"></iframe>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="embed-responsive embed-responsive-16by9">
+  				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/waM_L2FxzGQ?rel=0" frameborder="0" width="280" height="168"></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="embed-responsive embed-responsive-16by9">
+  				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/zxJq6OyPfNs?rel=0" frameborder="0" width="280" height="168"></iframe>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="embed-responsive embed-responsive-16by9">
+  				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/ILw4aD_eOlY?rel=0" frameborder="0" width="280" height="168"></iframe>
+			</div>
+		</div>
+	</div>	
+<!-- /com.omniupdate.div -->
 
 
 	</maincontent>
