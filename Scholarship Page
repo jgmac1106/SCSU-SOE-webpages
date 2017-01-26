@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="html"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+	
+	<!-- com.omniupdate.properties -->
+	<title>Scholarships</title>
+	<!-- /com.omniupdate.properties -->
+	
+	<config>
+	<!-- com.omniupdate.properties -->
+	<parameter name="page-heading" group="Everyone" prompt="Page Heading" alt="Defines the text used as the page heading for the main content region.">Scholarships</parameter>
+	<parameter name="callout" group="Everyone" type="radio" prompt="Callout Section" alt="Enables or disables the callout region found within the main content.">
+		<option value="true" selected="false">On</option>
+		<option value="false" selected="true">Off</option>	
+	</parameter>
+	<parameter name="action-btn" group="Everyone" type="radio" prompt="Action Buttons" alt="Enables or disables the action buttons found within the main content region.">
+		<option value="true" selected="false">On</option>
+		<option value="false" selected="true">Off</option>
+	</parameter>
+	<parameter name="featured" group="Everyone" type="radio" prompt="Featured Content" alt="Enables or disables the featured content region found below the main content.">
+		<option value="true" selected="false">On</option>
+		<option value="false" selected="true">Off</option>
+	</parameter>
+	
+	<parameter section ="Main Image Settings" name="main-image" group="Everyone" type="radio" prompt="Main Image" alt="Enables or disales the main image above the main content.">
+		<option value="image" selected="false">Main Image</option>
+		<option value="none" selected="true">None</option>
+	</parameter>
+	<parameter name="image-loc" group="Everyone" type="radio" prompt="Image Location" alt="Determines if the page will use the image defined by the directory variable, or an editable region on page level">
+		<option value="inherit" selected="true">Inherit from directory</option>
+		<option value="local" selected="false">Page level</option>
+	</parameter>
+	<parameter name="nav-adjust" group="Everyone" type="radio" prompt="Left Navigation Adjust" alt="If 'adjust' is selected, the left navigation will be moved up into the main image." >
+		<option value="default" selected="true">Default</option>
+		<option value="adjust" selected="false">Adjust</option>
+	</parameter>
+	<parameter name="galleryType" type="select" group="Everyone" prompt="Gallery Type" alt="Please select the type of gallery you would like this page to use.">
+		<option value="1" selected="false">Orbit Slider</option>
+		<option value="2" selected="true">Pretty Photo Thumbnails</option>
+	</parameter>
+	
+	
+	<!-- /com.omniupdate.properties -->
+	</config>
+	
+	<metadata>
+	<!-- com.omniupdate.properties -->
+		<meta name="description" content="Supporting students" />
+	<!-- /com.omniupdate.properties -->
+	</metadata>	
+	
+	<maincontent>
+	<!-- com.omniupdate.div  label="maincontent"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955"/ --><style><!--
+.scholarship-section { 
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+}
+  .triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+    border-top: 100px solid #ffcc00;
+    display:block;
+    
+}
+  .circular-img {
+	border-radius: 50%;
+    max-width: 125px;
+    display: block;
+    padding-bottom: 15px;
+    margin-left:-10px;
+	}
+  .bio-content {
+    padding: 85px 0 30px 0;
+font-size: 20px;
+line-height: 26px;
+text-align: left;
+  }
+.student-content-top {
+display: flex;
+flex-shrink: 0;
+margin-left: 70px;
+}
+  
+  .student-bio-left {
+  text-align: left;
+padding-right: 40px;
+    min-width: 135px;
+  }
+    .student-bio-right {
+    display:block;
+  }
+  
+  .scholarship-name {
+font-size: 32px;
+font-weight: 300;
+color: #3470AD;
+padding-top: 30px;
+text-align: left;
+line-height: 1em;
+}
+  .funder {
+font-size: 18px;
+line-height: 26px;
+font-weight: 200;
+text-align: left;
+}
+  .student-quote {
+font-size: 22px;
+line-height: 31px;
+font-weight: 300;
+font-style: italic;
+color: #3470AD;
+padding-top: 25px;
+}
+  .scholarship-description {
+font-size: 18px;
+font-weight: 200;
+line-height: 26px;
+color: #333;
+padding-top: 25px;
+}
+.containpic {
+max-width:660px;
+text-align:center;
+}
+
+.categorypic {
+position:relative;
+display: inline-block;
+float:left;
+padding:10px;
+}
+  
+.image-wrapper {
+  position: relative;
+  height: 125px;
+  width: 125px;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.image-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+.image-wrapper .image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 51, 153,.25);
+  color: #fff;
+  display: none;
+}
+.image-wrapper:hover .image-overlay {
+   display: block;
+}
+.image-wrapper .image-overlay .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+font-size: 12px;
+   font-family: Georgia, serif;
+  height: 20px;
+  width: 150px;
+  margin-top: -10px;
+  margin-left: -75px;
+}
+  .button-scholarship {
+   border-top: 1px solid #96d1f8;
+   background: #ffcc00;
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   color: #003399;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+    text-align: center;
+    min-width: 125px;
+    margin-right: 10px;
+   }
+.button-scholaship:hover {
+   background: #003399;
+   color: #ffcc00;
+   }
+--></style>
+<div class="scholarship-name">Minority Teacher Incentive Grant</div>
+<p><span style="font-size: medium;">Minority Teacher Incentive Grant</span><br /><span style="font-size: medium;">Approximate Value: $2,500.00</span></p>
+<p><span style="font-size: medium;">Nominees must be full-time juniors or seniors enrolled in an undergraduate teacher </span><br /><span style="font-size: medium;">preparation program.&nbsp;</span></p>
+<p><strong><span style="font-size: medium;"><a href="/academics/schools/education/MTIP%202016-17%20Nomination%20Form.pdf">&nbsp;Scholarship Information</a></span></strong></p>
+<div class="scholarship-name">Alma Exley Scholarship Program</div>
+<p><span style="font-size: medium;">Alma Exley Scholarship Program</span><br /><span style="font-size: medium;">Approximate Value: $5,000.00</span></p>
+<p><span style="font-size: medium;">The scholarship program is intended to support and encourage person of color in Connecticut who are committed to a career in public school teaching.</span>&nbsp;</p>
+<p><strong><span style="font-size: medium;"><a href="/academics/schools/education/Alma%20Exley.pdf">Scholarship Information</a></span></strong></p>
+<div class="scholarship-name">Brown Memorial Scholarship</div>
+<div class="funder">Brown Memorial Scholarship Fund</div>
+<div class="funder">Approximate Value: $2,000.00</div>
+<div class="scholarship-description">The Brown Memorial Scholarship Fund was established in memory of Jane Brown. It is awarded annually to an Education major.</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Brown%20Endowed%20Scholarship.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>-->
+<div class="containpic">
+<div class="categorypic">
+<div class="image-wrapper"><span class="image-overlay"> <span class="content">Shamel Lewis <br />Ed.D. Student</span> </span> <img src="/academics/schools/education/scholarshipimages/lewis-square.jpg" alt="" /></div>
+</div>
+<div class="categorypic">
+<div class="image-wrapper"><span class="image-overlay"> <span class="content">Private Award <br />6th Year Candidate</span> </span> <img src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="" /></div>
+</div>
+</div>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="scholarship-name"></div>
+<div class="scholarship-name">Minority Teacher Incentive Grant Program</div>
+<div class="funder">Connecticut Department of Education</div>
+<div class="scholarship-description">
+<p>The <a href="/education/uploads/textWidget/wysiwyg/documents/200910_MTIPForm.pdf" target="_blank">Minority Teacher Incentive Grant Program </a>provides up to $5,000 per year for two years of full-time study to minority students enrolled as undergraduates in Connecticut teacher preparation programs.&nbsp; This grant will also provide an additional $2,500 per year toward student loan reimbursement for those graduates who go on to teach in Connecticut public elementary or secondary schools.&nbsp; The Weisman Scholarship provides the same opportunities for minority students who are enrolled in teacher preparation programs for Mathematics and Science Education.</p>
+<span class="button-scholarship"><a href="http://www.ctohe.org/sfa/sfa.shtml">Scholarship Information</a></span><span class="button-scholarship"><a href="https://www.ctohe.org/SFA/pdfs/MTIPForm.pdf">Apply Now</a></span></div>
+</div>
+<div class="containpic">
+<div class="categorypic">
+<div class="image-wrapper"><span class="image-overlay"> <span class="content">Jacinya C.<br /> Benjamin</span> </span> <img src="/academics/schools/education/scholarshipimages/Benjamin-Square.jpg" alt="" /></div>
+</div>
+<div class="categorypic">
+<div class="image-wrapper"><span class="image-overlay"> <span class="content">Rachel<br />Gause</span> </span> <img src="/academics/schools/education/scholarshipimages/Gause-square.jpg" alt="Rachel Gause" /></div>
+</div>
+<div class="categorypic">
+<div class="image-wrapper"><span class="image-overlay"> <span class="content">Marco A.<br />Olmedo Ramirez</span> </span> <img src="/academics/schools/education/scholarshipimages/Olmedo-square.jpg" alt="" /></div>
+</div>
+<div class="categorypic">
+<div class="image-wrapper"><span class="image-overlay"> <span class="content">Clarissa<br />B. Rodrigues</span> </span> <img src="/academics/schools/education/scholarshipimages/rogrigues2-square.jpg" alt="Clarisa B. Rodrigues" /></div>
+</div>
+<div class="categorypic">
+<div class="image-wrapper"><span class="image-overlay"> <span class="content">Tashi A.<br />Sanchez Llaury</span> </span> <img src="/academics/schools/education/scholarshipimages/llaury-square.jpg" alt="Tashi A. Sanchez Llaury" /></div>
+</div>
+<div class="categorypic">
+<div class="image-wrapper"><span class="image-overlay"> <span class="content">Anita<br />Juan</span> </span> <img src="/academics/schools/education/scholarshipimages/Yaun-square.jpg" alt="Anita Yuan" /></div>
+</div>
+</div>
+<div class="student-quote">
+<p style="padding-top: 175px;">And twelve other students who wish to remain anonymous</p>
+</div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content"><!--<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="Tashi A. Sanchez Llaury" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">-->
+<div class="scholarship-name">Maureen L. Bornstein Endowed Scholarship</div>
+<div class="funder">Maureen L. Bornstein Endowed Scholarship Fund</div>
+<div class="funder">Approximate Value: $1,100.00</div>
+<div class="student-quote">
+<p>Awardee wished to remain private</p>
+</div>
+<!--</div>
+</div>-->
+<div class="scholarship-description">
+<p>Maureen L. Bornstein Endowed Scholarship is designed to diversify the teaching force. The scholarship is available to any undergraduate enrolled in an education program. Students must demonstrate an outstanding academic record. Preference will be given to first generation Americans.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Bernstein%20Scholarship.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/delhanty-square.jpg" alt="Shannon Delhanty
+" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">Edith Voccala Baldyga Scholarship</div>
+<div class="funder">Edith Voccala Baldyga Scholarship Fund</div>
+<div class="funder">Approximate Value: $425.00</div>
+<div class="student-quote">
+<p>Shannon Delhanty</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Edith Voccala Baldyga Scholarship is designed to provide assistance to future teachers in financial need. Candidates are nominated and approved by School of Education faculty. The scholarship is renewable based on available funds and maintaining good academic standards.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Edith%20Voccola%20Baldyga%20Scholarship.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<!--<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">Lou Irvin Award</div>
+<div class="funder">Greater New England Alliance of Black School Educators</div>
+<div class="student-quote">
+<p>Interesting Quote from student or funder</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Greater New England Alliance of Black School Educators is seeking to further the higher education opportunities among qualified juniors and senior students of color who are residents of Connecticut and have been accepted into the School of Education. It is our desire that through this financial assistance, some area young person, who might not otherwise have been afforded the opportunity, might gain advanced educational training. Further, it is our hope that with this education, the individual will be able and obliged to contribute to the betterment of the area, the country and indeed the world.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span></div>
+</section>-->
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/Kamnitzer-square.jpg" alt="Alexandra Kamnitzer
+" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">The Dr. L Barbieri and Family Scholarship</div>
+<div class="funder">The Dr. L. Barbieri and Family Fund</div>
+<div class="funder">Approximate Value: $850.00</div>
+<div class="student-quote">
+<p>Alexandra Kamnitzer</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Dr. L Barbieri and Family Scholarship is a needs based scholarship available to any School of Education student with an outstanding academic record. The scholarship is renewable each year. Priority is given to State of Connecticut residents.</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/nero-square.jpg" alt="Jodi Nero" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">Connecticut Early Childhood Education Council Annual Scholarship</div>
+<div class="funder">Connecticut Early Childhood Education Council</div>
+<div class="funder">Approximate Value: $950.00</div>
+<div class="student-quote">
+<p>Jodi Nero</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Connecticut Early Childhood Education Council Annual Scholarship is merit scholarship awarded to a graduate student in the early childhood education program. The candidate must have a 3.2 GPA, submit two letters of recommendation, and write an essay. This will detail the candidate’s personal history, value and pertinent experience. Applicants will be judged using three criteria: teaching skills, scholarship and sensitivity to young children.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/CT%20Early%20Childhood%20Scholarship.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/johnson-square.jpg" alt="Tiffany Johnson" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">D’Amato Endowed Scholarship Fund</div>
+<div class="funder">Raymond F. D'Amato (58) and Elizabeth (Betty) K. D'Amato (57)</div>
+<div class="funder">Approximate Value: $800.00</div>
+<div class="student-quote">
+<p>Tiffany Johnson</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The D'Amato Endowed Scholarship is a merit based award. Candidates must have a GPA of 3.2 and a record of service to the community.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/DAmato%20Scholarship.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/brelsford-square.jpg" alt="Lindsay J. Breslford" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">Daniels DeFance Family Endowed Scholarship</div>
+<div class="funder">Daniels DeFance Family Endowed Scholarship Fund</div>
+<div class="funder">Approximate Value: $800.00</div>
+<div class="student-quote">
+<p>Lindsay J. Breslford</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Daniels DeFance Family Endowed Scholarship is a needs based scholarship open to commuters from West Haven, CT. The annual award is available to a student with a high academic record and demonstrated financial need.</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content"><!--<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">-->
+<div class="scholarship-name">Geraldine Frankel Endowed Scholarship</div>
+<div class="funder">Geraldine Frankel Endowed Fund</div>
+<div class="funder">Approximate Value: $1,000.00</div>
+<div class="student-quote">
+<p>Awardee wished to remain private.</p>
+</div>
+<!--</div>
+</div>-->
+<div class="scholarship-description">
+<p>The Geraldine Frankel Endowed Scholarship is awarded to a special education certification student who demonstratse a commitment to enhancing the life opportunities of individuals with special needs. Candidates must have a strong academic record. Preference will be given to students in secondary education.</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content"><!--<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">-->
+<div class="scholarship-name">Goodwin Endowment Scholarship</div>
+<div class="funder">Dorothy Weisbauer Goodwin Endowment</div>
+<div class="funder">Approximate Value: $2,900.00&nbsp;</div>
+<div class="student-quote">
+<p>Awardee wished to remain private.</p>
+</div>
+<!--</div>
+</div>-->
+<div class="scholarship-description">
+<p>The Goodwin Endowment Scholarship is awarded each year to an elementary education major. Recipients are chosen by the School of Education.</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content"><!--<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">-->
+<div class="scholarship-name">The Lindsay Jeppesen Annual Scholarship Fund</div>
+<div class="funder">Alice and Philip Palma</div>
+<div class="student-quote">
+<p>Awardee wished to remain private.</p>
+</div>
+<!--</div>
+</div>-->
+<div class="scholarship-description">
+<p>Alice and Philip Palm established the Lindsay Jeppesen Annual Scholarship to honor both their granddaughter, a student with special needs, and the teachers who inspired Lindsay. The award is chosen by the Dean of the School of Education and given to an undergraduate student seeking a special education degree.</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<!--<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">The Zing Jung Endowed Scholarship</div>
+<div class="funder">Zing Jung Memorial Fund</div>
+<div class="student-quote">
+<p>Interesting Quote from student or funder</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+	<p>Jung Endowed Scholarship honors  Zing Tsung Jung (’72). She valued education achievement during a life notable for setting high benchmarks in both.  She began as a librarian at Notrh Haven High Shool and retireed as directory of library and archives of the American Psychiatric Association. The award is a needs based scholarship available to students in the Master of Library Science program who have demonstrated leadership in community service efforts.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span></div>
+</section>-->
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/dangelo-square.jpg" alt="Marissa D’Angelo
+" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">Pauline Katz Scholarship</div>
+<div class="funder">Pauline Katz Fund</div>
+<div class="funder"><span>Approximate Value: $400.00</span></div>
+<div class="student-quote">
+<p>Marissa D’Angelo</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Pauline Katz Scholarship is a needs based award for undergraduate students enrolled in elementary education who show a strong committment to public schools. Students must have a strong academic record and are chosen by the school of education.</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/McKee-square.jpg" alt="Felicia McKee
+" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">Kim Laliberti Scholarship</div>
+<div class="funder">The Class of 1998</div>
+<div class="funder"><span>Approximate Value: $400.00</span></div>
+<div class="student-quote">
+<p>Felicia McKee</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Kim Laliberti Scholarship is awarded to a special education. Preference will be given to candidates also major also majoring in History or English. The candidate must be an outstanding academic student.</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/diaz-square.jpg" alt="Maria Diaz
+" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">The Landino Family Scholarshipp</div>
+<div class="funder">The Landino Family Scholarship Fund</div>
+<div class="funder">Approximate Value: $1,800.00</div>
+<div class="student-quote">
+<p>Maria Diaz</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>Dr. Rita Landino has established a scholarhsip in honor of her family and in recognition of her 35 years teaching at Southern Connecticut State University. The award is open to graduate or undergraduate students studying in the field of secondary English education.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Landino%20Family%20Scholarship.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/Rodrigues-square.jpg" alt="Clarisa B. Rodrigues
+" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">Nancy Laine Marano Endowed Scholarship</div>
+<div class="funder">The Nancy Laine Marano Endowed Scholarship Fund</div>
+<div class="funder">Approximate Value: $2,500.00</div>
+<div class="student-quote">
+<p>Clarisa B. Rodrigues</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Nancy Laine Marano Endowed Scholarship Fund was established in memory of Nancy Laine Marano, Professor of Education at Southern Connecticut State University. Dr. Marano was a dear friend , valued colleague and trusted student advisor. She valued elementary education and treasured language arts. Students in their junior and senior years, with a GPA of 3.2 or higher, may apply to the merit based award by submitting an essay explaining why they deserve the scholarship.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Marano%20Scholarship.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="blank
+" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">The Dorothy J. Martino Endowed Scholarship</div>
+<div class="funder">The Dorothy J. Martino Endowed Scholarship Fund</div>
+<div class="funder">Approximate Value: $1,100.00</div>
+<div class="student-quote"></div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Dorothy J. Martino Endowed Scholarship Fund is designed to provide assistance to future teachers in education, mathematics or science. Candidates must be residents of Woodbridge, Orange or Bethany, CT. These students are nominated and approved by School of Education faculty. The scholarship is renewable based on available funds and maintaining good academic standards.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Martino%20Scholarship.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="blank
+" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">Morgan-Conquest Scholarship Fund</div>
+<div class="funder">The Morgan-Conquest Scholarship Fund</div>
+<div class="funder">Approximate Value: $12,000.00</div>
+<div class="student-quote"></div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Morgan-Conquest Scholarship Fund is designed to provide assistance to future teachers with preference given to minority students. Candidates are nominated and approved by School of Education faculty. The scholarship is renewable based on available funds and maintaining good academic standards.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Morgan-Conquest%20Scholarship%20.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/Bonacci-square.jpg" alt="Godelieve Bonacci" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">Nancy B. Palmieri Memorial Scholarship</div>
+<div class="funder">Nancy B. Palmieri Memorial Scholarship Fund</div>
+<div class="funder">Approximate Value: $1,700.00</div>
+<div class="student-quote">
+<p>Godelieve Bonacci</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The Nancy B. Palmieri Memorial Scholarship was established to support undergraduate students in the School of Education. To be eligible, applicants must be a resident of the state of Connecticut. Students must also demonstrate academic achievement.</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content"><!--<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/diaz-square.jpg" alt="Maria Diaz
+" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">-->
+<div class="scholarship-name">Anne Marie Murphy Scholarship</div>
+<div class="funder">Anne Marie Murphy Endowed Scholarship Fund</div>
+<div class="funder">Approximate Value: $1,000.00</div>
+<div class="student-quote">
+<p>Awardee wished to remain private</p>
+</div>
+<!--</div>
+</div>-->
+<div class="scholarship-description">
+<p>Anne Marie Murphy, 52, was a 14-year resident of Sandy Hook, CT, formerly of Katonah NY, who died Friday, December 14,2012 protecting the children in her care during the tragic shooting at the Sandy Hook Elementary School. She will be remembered for her love of the arts, walks in the outdoors and most importantly, her family. The scholarship established by her devoted husband Michael Murphy and their children Kelly, Colleen, Paige and Thomas, is a tribute to Anne Marie McGowan Murphy's memory, her dedication to her students, her bravery in the face of mortal danger and the selflessness she exhibited in protecting the children in her care. The award is given to a special education graduate student</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content" style="padding: 5px 0 30px 0;">
+<div class="scholarship-name">Beatrice H. Rockwell Scholarship</div>
+<div class="funder">Beatrice H. Rockwell Scholarship Fund</div>
+<div class="funder">Approximate Value: $2,500.00</div>
+</div>
+<div class="scholarship-description">
+<p>The goal of the Beatrice H. Rockwell Scholarship is to provide tuition assistance to students seeking high school certification. Recipient must be in his or her junior or senior year at university and accepted into the School of Education. The student must have at least a 3.0 cumulative grade point average for the preceding two years.</p>
+<span class="button-scholarship"><a href="/academics/schools/education/Rockwell%20Scholarship.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+<div class="containpic">
+<div class="categorypic">
+<div class="image-wrapper"><span class="image-overlay"> <span class="content">Kelly I. Gunneson <br />History Student</span> </span> <img src="/academics/schools/education/scholarshipimages/Gunnenson-square.jpg" alt="Kelly I. Gunneson" /></div>
+</div>
+<div class="categorypic">
+<div class="image-wrapper"><span class="image-overlay"> <span class="content">Private Award <br />Math Student</span> </span> <img src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="" /></div>
+</div>
+</div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content"><!--<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="Tashi A. Sanchez Llaury" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">-->
+<div class="scholarship-name">Sage Family Library Science Scholarship</div>
+<div class="funder">Sage Family Trust Library Science Scholarship Fund</div>
+<div class="funder"></div>
+<div class="student-quote">
+<p>Awardee wished to remain private</p>
+</div>
+<!--</div>
+</div>-->
+<div class="scholarship-description">
+<p>The Sage Family Scholarship is available for student enrolled full time in the School of Education, Department of Information and Library Sciences at the University, or the student must be a full time (9 or more credits) or half time (6 credits) graduate student enrolled in the Master of Library Science program. The scholarship is a merit and need based award.</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<!--<section class="scholarship-section">
+<div class="bio-content"><div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="Tashi A. Sanchez Llaury" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">Stone Scholarship</div>
+<div class="funder">Carol A Stone. Scholarship Fund</div>
+<div class="student-quote">
+<p>Awardee wished to remain private</p>
+</div>
+<div class="scholarship-description">
+<p>The Stone Scholarship is named in honor of Carol A Stone ('52). Carol was a librarian and scholar who served the people of Miami-Dade, ultimately becoming Supervisor for the Departments ofPeriodicals and Government Documents. She has been honored for forty years of service to Miami-Dade County and especially by her friends and Associates of the Miami-Dade Public Library, Main Branch. This merit based scholarship is available to undergraduate or graduate students enrolled in the information and library science program.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span></section>-->
+<section class="scholarship-section">
+<div class="bio-content"><!--<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="Tashi A. Sanchez Llaury" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">-->
+<div class="scholarship-name">Dr. Michael F. Tobin Endowed Scholarship</div>
+<div class="funder">Dr. Michael F. Tobin Endowed Scholarship Fund</div>
+<div class="funder">Approximate Value: $1,500.00</div>
+<div class="student-quote">
+<p>Awardee wished to remain private</p>
+</div>
+<!--</div>
+</div>-->
+<div class="scholarship-description">
+<p>The Michael F. Tobin Endowed Scholarship is in honor of Michael F. Tobin, a man who devoted his adult life to teaching and field education. In four decades, he worked as a teacher, an administrator and eventually a tenured professor at Southern Connecticut State University. This merit based scholarship is available to full time or part time students and declared Education Major.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Tobin%20Endowed%20Scholarship.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content"><!--<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" alt="Tashi A. Sanchez Llaury" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">-->
+<div class="scholarship-name">Rebecca Ward '69 Scholarship</div>
+<div class="funder">Rebecca Ward '69 Scholarship Fund</div>
+<div class="student-quote">
+<p>Awardee wished to remain private</p>
+</div>
+<!--</div>
+</div>-->
+<div class="scholarship-description">
+<p>This merit based scholarship, named in honor of Rebecca Ward, is available to full time students who are declared Secondary Education Major.</p>
+</div>
+<!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Scholarship Information</a></span><span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section>
+<section class="scholarship-section">
+<div class="bio-content">
+<div class="student-content-top">
+<div class="student-bio-left"><img class="circular-img" src="/academics/schools/education/scholarshipimages/basil-square.jpg" alt="Amanda Basil" />
+<div class="triangle-down"></div>
+</div>
+<div class="student-bio-right">
+<div class="scholarship-name">John H. Williamson Endowed Scholarship</div>
+<div class="funder">John H. Williamson Endowed Scholarship Fund</div>
+<div class="funder">Approximate Value: $1,400.00</div>
+<div class="student-quote">
+<p>Amanda Basil</p>
+</div>
+</div>
+</div>
+<div class="scholarship-description">
+<p>The John H. Williamson Endowed Scholarship was established to support undergraduate students in the School of Education. To be eligible candidates must be enrolled full time and declared Special Education Major.</p>
+</div>
+<span class="button-scholarship"><a href="/academics/schools/education/Williamson%20Endowed%20Scholarhsip.pdf">Scholarship Information</a></span><!--<span class="button-scholarship"><a href="/academics/schools/education/Lou%20Irvin%20Award%20Information%202015.docx">Apply Now</a></span>--></div>
+</section><!-- /com.omniupdate.div -->
+	</maincontent>
+	
+	<main-image>
+	<!-- com.omniupdate.div  label="main-image"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/main-image.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
+	<img src="/_resources/images/gen-content-level-2-big-img.jpg" alt="landing image" />
+	<!-- /com.omniupdate.div -->
+	</main-image>
+	
+	<main-feature>
+	<!-- com.omniupdate.div  label="main-feature"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/maincontent.css" width="955" -->
+	<table>
+		<tbody>
+			<tr><th>Image</th><th>Info</th></tr>
+			<tr>
+				<td><img src="/_resources/images/ac-landing-arts-sciences.jpg" alt="A woman using lab equipment" /></td>
+				<td>
+				<h2>The heart of the university</h2>
+				<h3>School of Arts &amp; Sciences</h3>
+				<a href="#">Learn More</a>
+				</td>
+			</tr>
+			<tr>
+			<td><img src="/_resources/images/ac-landing-business-school.jpg" alt="A diagram on a chalkboard" /></td>
+				<td>
+				<h2>Prepare yourself</h2>
+				<h3>School of Business</h3>
+				<a href="#">Learn More</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/_resources/images/ac-landing-school-ed.jpg" alt="Students raising their hand" /></td>
+				<td>
+				<h2>Passionate about teaching</h2>
+				<h3>School of Education</h3>
+				<a href="#">Learn More</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/_resources/images/ac-landing-health-human.jpg" alt="A medical professional" /></td>
+				<td>
+				<h2>A mission of caring</h2>
+				<h3>School of Health &amp;<br />Human Sciences</h3>
+				<a href="#">Learn More</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- /com.omniupdate.div -->	
+	</main-feature>
+	
+	<action-btns>
+	<!-- com.omniupdate.div  label="action-btns"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/action-btns.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
+	<a href="#apply">Apply Now</a>
+	<a href="#visit">Visit Campus</a>
+	<!-- /com.omniupdate.div -->
+	</action-btns>
+	
+	<callout>
+	<!-- com.omniupdate.div  label="callout"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/callout.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
+	<h2>Application Deadline</h2>
+	<p>April 1, 2012</p>
+	<!-- /com.omniupdate.div -->
+	</callout>
+		
+	<featured-content>
+	<!-- com.omniupdate.div  label="featured-content1"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/featured-content.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
+	<img src="/_resources/images/gen-content-level2-talk-couns.jpg" alt="An admissions counselor helping a student" />
+	<a href="#">Talk to an admissions counselor</a>
+	<!-- /com.omniupdate.div -->
+	</featured-content>
+	<featured-content>
+	<!-- com.omniupdate.div  label="featured-content2"  group="Everyone"  button="707"  break="break" -->
+	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/featured-content.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
+	<img src="/_resources/images/gen-content-level2-dlviewbook.jpg" alt="The cover of the SCSU Viewbook" />
+	<a href="#">Download the viewbook</a>
+	<!-- /com.omniupdate.div -->
+	</featured-content>
+	
+	
+</document>
