@@ -1,373 +1,1508 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="html"?>
-<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
-
-<document>
-	<headcode></headcode>
-	<bodycode></bodycode>
-	<footcode></footcode>
-	
-	<!-- com.omniupdate.properties -->
-	<title>Faculty</title>
-	<!-- /com.omniupdate.properties -->
-	
-	<config>
-	<!-- com.omniupdate.properties -->
-	<parameter name="breadcrumb" group="Everyone" prompt="Breadcrumb" alt="Defines the breadcrumb, otherwise the page title will be used."></parameter>
-<parameter name="page-heading" group="Everyone" prompt="Page Heading" alt="Defines the text used as the page heading for the main content region.">faculty and staff</parameter>
-	<parameter name="callout" group="Everyone" type="radio" prompt="Callout Section" alt="Enables or disables the callout region found within the main content.">
-<option value="true" selected="false">On</option>
-<option value="false" selected="true">Off</option>
-</parameter>
-	<parameter name="action-btn" group="Everyone" type="radio" prompt="Action Buttons" alt="Enables or disables the action buttons found within the main content region.">
-<option value="true" selected="false">On</option>
-<option value="false" selected="true">Off</option>
-</parameter>
-	<parameter name="featured" group="Everyone" type="radio" prompt="Featured Content" alt="Enables or disables the featured content region found below the main content.">
-<option value="true" selected="false">On</option>
-<option value="false" selected="true">Off</option>
-</parameter>
-	
-	<parameter section ="Main Image Settings" name="main-image" group="Everyone" type="radio" prompt="Main Image" alt="Enables or disales the main image above the main content.">
-<option value="image" selected="false">Main Image</option>
-<option value="none" selected="true">None</option>
-</parameter>
-	<parameter name="image-loc" group="Everyone" type="radio" prompt="Image Location" alt="Determines if the page will use the image defined by the directory variable, or an editable region on page level">
-<option value="inherit" selected="true">Inherit from directory</option>
-<option value="local" selected="false">Page level</option>
-</parameter>
-	<parameter name="nav-adjust" group="Everyone" type="radio" prompt="Left Navigation Adjust" alt="If 'adjust' is selected, the left navigation will be moved up into the main image." >
-<option value="default" selected="true">Default</option>
-<option value="adjust" selected="false">Adjust</option>
-</parameter>	
-	
-	<!-- /com.omniupdate.properties -->
-	</config>
-	
-	<metadata>
-	<!-- com.omniupdate.properties -->
-		<meta name="description" content="" />
-	<!-- /com.omniupdate.properties -->
-	</metadata>	
-	
-	<maincontent>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- com.omniupdate.div  label="maincontent"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955"/ --><style><!--
-
-.person {
-  padding: 1em;
-  margin: 0.5em auto;
-  /*border: 1px dotted #e9e9e9;*/
-  float: left;
-}
-.person-name {
-  font-family: georgia;
-  text-transform: uppercase;
-  font-size: 1em;
-  vertical-align: top;
-  padding-top: 0;
-  margin-top: 0;
-}
-.person-title {
-  font-family: "georgia";
-  text-transform: uppercase;
-  color: #999;
-
+<header>
+  <script src="https://use.fontawesome.com/e83e9b1e77.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
   
-}
-    .person-contact {
-  font-family: "georgia";
-  color: #999;
-      font-size:0.7em
   
-}
-.person-image {
-  max-width:125px;
-  float: right;
-      border-radius:50%;
-
-}
-.person-description {
-  font-family: georgia;
- padding: 0;
-      margin-top:25px;
-      margin-left:5px;
-}
-     #contact {
-      font-family:georgia; 
-      font-size:0.8em
-    }
-      .contactlink {
-  font-family: georgia;
- padding: 0;
-      margin-right:5px;
-color:#003399;
-}
---></style>
+<link href="biocard.css" rel="stylesheet">
+</header>
+<html>
+<body>
 <div class="container">
-	<div class="row">
-		<div class="col-md-4">
-			<div class="rectangle">
-				<div class="person">
-				<h3 class="person-name">Beena Acchpal<img class="person-image" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/beena.jpg" alt="" /> </h3>
-				<h4 class="person-title">Professor</h4>
-					<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
-						
-					</div>
-				<p class="person-contact">(203) 392-6706<br />Davis 115D</p>
-				</div>
-				<div>
-					<p class="person-description">Beena Achhpal (Ph.D., University of Connecticut) is a teacher and researcher interested in early childhood development.</p>
-				</div>	
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="rectangle">
-				<div class="person">
-					<h3 class="person-name">Laura Bower-Phipps<img class="person-image" src="http://www.redesignu.org/sites/default/files/styles/medium__square/public/block_images/blank%20profile%20of%20woman_2.jpeg" alt="" /> </h3>
-					<h4 class="person-title">Associate Professor</h4>
-				<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
-				</div>
-					<p class="person-contact">(203) 392-7298<br />Davis 209D</p>
-				</div>
-				<div>
-					<p class="person-description">Laura Bower-Phipps(Ph.D., University of Nevada) is a teacher and researcher interested in gender and sexual diversity.</p>
-				</div>	
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="rectangle">
-				<div class="person">
-				<h3 class="person-name">Cheryl Dickinson<img class="person-image" style="margin-left: 5px;" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/cheryl.jpg" alt="" /> </h3>
-				<h4 class="person-title">Professor</h4>
-				<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
-				</div>
-				<p class="person-contact">(203) 392-6484<br />Davis 210F</p>
-				</div>
-				<div>
-					<p class="person-description">Cheryl Dickinson (Ed.D., University of Pennsylvania) is a teacher and researcher in reading comprehension.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4">	
-			<div class="rectangle">
-				<div class="person">
-					<h3 class="person-name">Joy Fopiano<img class="person-image" style="margin-left: 10px; margin-top: 20px;" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/joy.jpg" alt="" /> </h3>
-					<h4 class="person-title">Associate Professor</h4>
-						<div id="contact"><!--<a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>--></div>
-					<p class="person-contact">(203) 392-5915<br />Davis 210C</p>
-				</div>
-				<div>
-					<p class="person-description">Joy Fopiano (Ed.D., University of Massachussetts) is a teacher and researcher in mental health counseling.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">	
-			<div class="rectangle">
-				<div class="person">
-					<h3 class="person-name">Adam Goldberg<img class="person-image" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/Goldberg.jpg" alt="" /> </h3>
-					<h4 class="person-title">Professor</h4>
-					<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
-					</div>
-					<p class="person-contact">(203) 392-6442<br />Davis 209D</p>
-				</div>
-					<div>
-						<p class="person-description">Adam Goldberg (Ed.D., Columbia Universiy) is a teacher and researcher in integrating technology into math education.</p>
-					</div>	
-			</div>
-		</div>
-		<div class="col-md-4">	
-			<div class="rectangle">
-				<div class="person">
-					<h3 class="person-name">Steven Greengross<img class="person-image" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/greengross.jpg" alt="" /> </h3>
-					<h4 class="person-title">Professor</h4>
-					<h3 class="person-name">Department Chair</h3>
-						<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
-					</div>
-					<p class="person-contact">(203) 392-6424<br />Davis 116A</p>
-				</div>
-					<div>
-						<p class="person-description">Steven Greengross (Ed.D., Boston Universiy) is a teacher and researcher in teacher preparation.</p>
-					</div>
-			</div>
-		</div>
-	</div>		
-	<div class="row">
-		<div class="col-md-4">
-			<div class="rectangle">
-				<div class="person">
-					<h3 class="person-name">David Levande<img class="person-image" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/levande.jpg" alt="" /> </h3>
-					<h4 class="person-title">Professor</h4>
-						<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
-						</div>
-						<div>
-						<p class="person-contact">(203) 392-6429<br />Davis 115C</p>
-						</div>
-						<div>
-							<p class="person-description">David Levande (Ed.D., Columbia Universiy) is a teacher and researcher in urban education.</p>
-						</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">		
-			<div class="rectangle">
-				<div class="person">
-					<h3 class="person-name">Helen Marx<img class="person-image" style="margin-top: 15px;" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/marx.jpg" alt="" /> </h3>
-					<h4 class="person-title">Associate Professor</h4>
-					<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
-					</div>
-					<p class="person-contact">(203) 392-6654<br />Davis 115G</p>
-				</div>
-				<div>
-				<p class="person-description" style="margin-top: 15px;">Helen Marx, undergraduate coordinator, (Ph.D., University of Connecticut) is a teacher and researcher in urban and international education.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="rectangle">
-				<div class="person">
-					<h3 class="person-name">J. Gregory McVerry<img class="person-image" style="margin-left: 5px;" src="http://jgregorymcverry.com/wp-content/uploads/2015/01/headshot1-54c7887fv1_site_icon.png" alt="" /> </h3>
-					<h4 class="person-title">Assistant Professor</h4>
-				<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
-				</div>
-				<p class="person-contact">(203) 392-6553<br />Davis 209D</p>
-				</div>
-				<div>
-					<p class="person-description">J. Gregory McVerry (Ph.D., University of Connecticut) is a teacher and researcher interested in literacy and technology.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4">	
-			<div class="rectangle">
-				<div class="person">
-				<h3 class="person-name">Joel Meisel<img class="person-image" style="margin-left: 10px; margin-top: 20px;" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/meisel.jpg" alt="" /> </h3>
-				<h4 class="person-title">Professor</h4>
-					<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
-					</div>
-			<p class="person-contact">(203) 392-6443<br />Davis 115F</p>
-				</div>
-				<div>
-				<p class="person-description">Joel Meisel (Ph.D., University of Connecticut) is a teacher and researcher in science education.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">				
-			<div class="rectangle">
-			<div class="person">
-				<h3 class="person-name">Carlos Torre<img class="person-image" style="margin-left: 5px; margin-top: 10px;" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/torre.jpg" alt="" /> </h3>
-				<h4 class="person-title">Professor</h4>
-					<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>--></div>
-			<p class="person-contact">(203) 392-5897<br />Davis 115F</p>
-			</div>
-			<div>
-				<p class="person-description">Carlos Torre (Ph.D., Harvard University) is a teacher and researcher in creativity and chaos theory.</p>
-			</div>
-			</div>
-		</div>
-		<div class="col-md-4">	
-			<div class="rectangle">
-				<div class="person">
-					<h3 class="person-name">Christine Villani<img class="person-image" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/villani.jpg" alt="" /> </h3>
-					<h4 class="person-title">Professor</h4>
-				<div id="contact"><!--<a class="contactlink" title="twitter" href=""><i class="fa fa-twitter fa-2x"></i></a><a class="contactlink" title="github" <href=""><i class="fa fa-github fa-2x"></i></a>-->
-				</div>
-					<p class="person-contact">(203) 392-5343<br />Davis 116B</p>
-				</div>
-				<div>
-					<p class="person-description">Christine Villani, Graduate Coordinator (Ed.D., Fordham University) is a teacher and researcher in educational law.</p>
-				</div>
-			</div>
-		</div>
+<div class="row">
+    <div class="col-md-4">
+<div class="card hovercard">
+        <div class="cardheader">
+        </div>
+        <div class="avatar">
+      <img alt="" src="http://www.southernct.edu/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/beena.jpg"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a href="#AcchpalModal" data-toggle="modal" data-target="#AcchpalModal">Beena Acchpal</a>
+          </div>
+          <div class="desc">Professor</div>
+          <div class="text-info">Child Development</div>
+          <div class="text-primary">Davis 115D 203 392-6706</div>
+          <div class="desc">Beena Acchpal (Ph.D., University of Connecticut) studies early childhood development.</div>
+        </div>
+        <div class="bottom">
+          <a class="btn btn-sm" rel="publisher"
+             href="mailto:acchpalb@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+          </div>
+      </div>  
+    </div> 
+   
+  <div class="col-md-4">
 
-	</div>
-</div>
-	<!-- /com.omniupdate.div -->
-	</maincontent>
-	
-	<main-image>
-	<!-- com.omniupdate.div  label="main-image"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/main-image.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
-	<img src="/_resources/images/gen-content-level-2-big-img.jpg" alt="landing image" />
-	<!-- /com.omniupdate.div -->
-	</main-image>
-	
-	<main-feature>
-	<!-- com.omniupdate.div  label="main-feature"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/maincontent.css" width="955" -->
-	<table>
-		<tbody>
-			<tr><th>Image</th><th>Info</th></tr>
-			<tr>
-				<td><img src="/_resources/images/ac-landing-arts-sciences.jpg" alt="A woman using lab equipment" /></td>
-				<td>
-				<h2>The heart of the university</h2>
-				<h3>School of Arts &amp; Sciences</h3>
-				<a href="#">Learn More</a>
-				</td>
-			</tr>
-			<tr>
-			<td><img src="/_resources/images/ac-landing-business-school.jpg" alt="A diagram on a chalkboard" /></td>
-				<td>
-				<h2>Prepare yourself</h2>
-				<h3>School of Business</h3>
-				<a href="#">Learn More</a>
-				</td>
-			</tr>
-			<tr>
-				<td><img src="/_resources/images/ac-landing-school-ed.jpg" alt="Students raising their hand" /></td>
-				<td>
-				<h2>Passionate about teaching</h2>
-				<h3>School of Education</h3>
-				<a href="#">Learn More</a>
-				</td>
-			</tr>
-			<tr>
-				<td><img src="/_resources/images/ac-landing-health-human.jpg" alt="A medical professional" /></td>
-				<td>
-				<h2>A mission of caring</h2>
-				<h3>School of Health &amp;<br />Human Sciences</h3>
-				<a href="#">Learn More</a>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-	<!-- /com.omniupdate.div -->	
-	</main-feature>
-	
-	<action-btns>
-	<!-- com.omniupdate.div  label="action-btns"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/action-btns.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
-	<a href="#apply">Apply Now</a>
-	<a href="#visit">Visit Campus</a>
-	<!-- /com.omniupdate.div -->
-	</action-btns>
-	
-	<callout>
-	<!-- com.omniupdate.div  label="callout"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/callout.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
-	<h2>Application Deadline</h2>
-	<p>April 1, 2012</p>
-	<!-- /com.omniupdate.div -->
-	</callout>
-		
-	<featured-content>
-	<!-- com.omniupdate.div  label="featured-content1"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/featured-content.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
-	<img src="/_resources/images/gen-content-level2-talk-couns.jpg" alt="An admissions counselor helping a student" />
-	<a href="#">Talk to an admissions counselor</a>
-	<!-- /com.omniupdate.div -->
-	</featured-content>
-	<featured-content>
-	<!-- com.omniupdate.div  label="featured-content2"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/featured-content.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
-	<img src="/_resources/images/gen-content-level2-dlviewbook.jpg" alt="The cover of the SCSU Viewbook" />
-	<a href="#">Download the viewbook</a>
-	<!-- /com.omniupdate.div -->
-	</featured-content>
-	
-	
-</document>
+      <div class="card hovercard">
+        <div class="cardheader">
+        </div>
+        <div class="avatar">
+      <img alt="" src="http://www.redesignu.org/sites/default/files/styles/medium__square/public/block_images/blank%20profile%20of%20woman_2.jpeg"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a href="#BowerPhippsModal" data-toggle="modal" data-target="#BowerPhippsModal">Laura Bower-Phipps</a>
+          </div>
+          <div class="desc">Associate Professor</div>
+          <div class="text-info">Teacher Idenities</div>
+          <div class="text-primary">Davis 209c 203 392-7298</div>
+          <div class="desc">Dr. Bower-Phipps (Ph.D., University of Nevada) studies identities of LGBQTi educators.</div>
+        </div>
+        <div class="bottom">
+          <!--<a class="btn  btn-twitter btn-sm" href="#">
+            <i class="fa fa-twitter"></i>
+          </a>-->
+          <a class="btn  btn-sm" rel="me"
+             href="mailto:bowerl2@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <!--<a class="btn btn-sm" rel="me"
+             href="mailto:bowerl2@southernct.edu">
+            <i class="fa fa-rss"></i>
+          </a>-->
+          </div>
+      </div>  
+    </div>
+    <div class="col-md-4">
+      <div class="card hovercard">
+        <div class="cardheader">
+        </div>
+         <div class="avatar">
+      <img alt="" src="http://www.southernct.edu/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/joy.jpg"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a href="#FopianoModal" data-toggle="modal" data-target="#FopianoModal">Joy Fopiano</a>
+          </div>
+          <div class="desc">Associate Professor</div>
+          <div class="text-info">Mental Health</div>
+          <div class="text-primary">Davis 210C 203 392-7298</div>
+          <div class="desc">Joy Fopiano (Ed.D., University of Massachussetts) studies mental health counseling and is the GEAR UP director.</div>
+        </div>
+        <div class="bottom">
+          <a class="btn  btn-twitter btn-sm" href="https://twitter.com/drjoygearup">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="btn  btn-sm" rel="publisher"
+             href="mailto:fopianoj1@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a class="btn btn-sm" rel="publisher"
+             href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+          </div>
+      </div>  
+    </div>
+  </div>    
+<div class="row">
+    <div class="col-md-4">
+<div class="card hovercard">
+        <div class="cardheader">
+        </div>
+        <div class="avatar">
+      <img alt="" src="http://www.southernct.edu/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/Goldberg.jpg"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a href="#GoldbergModal" data-toggle="modal" data-target="#GoldbergModal">Adam Goldberg</a>
+          </div>
+          <div class="desc">Professor</div>
+          <div class="text-info">Math Education</div>
+          <div class="text-primary">Davis 209F 203 392-6442</div>
+          <div class="desc">Adam Goldberg (Ed.D., Columbia Universiy) studies integrating technology into math education.</div>
+        </div>
+        <div class="bottom">
+          <a class="btn btn-sm" rel="me"
+             href="https://twitter.com/ProfG_SCSU">
+            <i class="fa fa-twitter"></i>
+          </a>
+			<a class="btn btn-sm" rel="me"
+             href="mailto:goldberga2@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+          </div>
+      </div>  
+    </div> 
+   
+  <div class="col-md-4">
+
+      <div class="card hovercard">
+        <div class="cardheader">
+        </div>
+        <div class="avatar">
+      <img alt="" src="http://www.southernct.edu/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/greengross.jpg"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a target="_blank" href="#">Steven Greengross</a>
+          </div>
+          <div class="desc">Professor, Department Chair</div>
+          <div class="text-info">Teacher Idenities</div>
+          <div class="text-primary">Davis 209c 203 392-6492</div>
+          <div class="desc">Steven Greengross (Ed.D., Boston Universiy) studies teacher preparation.</div>
+        </div>
+        <div class="bottom">
+          <a class="btn  btn-twitter btn-sm" href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="btn  btn-sm" rel="publisher"
+             href="mailto:greengrosss1@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a class="btn btn-sm" rel="publisher"
+             href="#">
+            <i class="fa fa-rss"></i>
+          </a>
+          </div>
+      </div>  
+    </div>
+    <div class="col-md-4">
+      <div class="card hovercard">
+        <div class="cardheader">
+        </div>
+         <div class="avatar">
+      <img alt="" src="http://www.southernct.edu/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/levande.jpg"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a target="_blank" href="#">David Levande</a>
+          </div>
+          <div class="desc">Professor</div>
+          <div class="text-info">Literacy</div>
+          <div class="text-primary">Davis 115C 203 392-6429</div>
+          <div class="desc">David Levande (Ed.D., Columbia Universiy) studies urban education and teaching literacy.</div>
+        </div>
+        <div class="bottom">
+          <a class="btn  btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="btn  btn-sm" rel="publisher"
+             href="mailto:levanded1@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a class="btn btn-sm" rel="publisher"
+             href="https://plus.google.com/shahnuralam">
+            <i class="fa fa-facebook"></i>
+          </a>
+          </div>
+      </div>  
+    </div>
+  </div>    
+ <div class="row">
+    <div class="col-md-4">
+<div class="card hovercard">
+        <div class="cardheader">
+        </div>
+        <div class="avatar">
+      <img alt="" src="http://www.southernct.edu/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/helensquare.jpg"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a href="#MarxModal" data-toggle="modal" data-target="#MarxModal">Helen Marx</a>
+          </div>
+          <div class="desc">Associate Professor</div>
+          <div class="text-info">Global Education</div>
+          <div class="text-primary">Davis 209c 203 392-6654</div>
+          <div class="desc">Helen Marx, undergraduate coordinator, (Ph.D., University of Connecticut) is a teacher and researcher in global education..</div>
+        </div>
+        <div class="bottom">
+          <a class="btn btn-sm" rel="publisher"
+             href="mailto:marxh1@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+          </div>
+      </div>  
+    </div> 
+   
+  <div class="col-md-4">
+
+      <div class="card hovercard">
+        <div class="cardheader">
+        </div>
+        <div class="avatar">
+      <img alt="" src="http://jgregorymcverry.com/wp-content/uploads/2015/01/headshot1-54c7887fv1_site_icon.png"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a href="#McVerryModal" data-toggle="modal" data-target="#McVerryModal">J. Gregory McVerry</a>
+          </div>
+          <div class="desc">Assistant Professor</div>
+          <div class="text-info">Digital Literacies</div>
+          <div class="text-primary">Davis 209c 203 392-6492</div>
+          <div class="desc">J. Gregory McVerry (Ph.D., University of Connecticut) studies literacy and technology.</div>
+        </div>
+        <div class="bottom">
+          <a class="btn  btn-twitter btn-sm" href="https://jgregorymcverry.com">
+            <i class="fa fa-rss"></i>
+          </a>
+          <a class="btn  btn-sm" rel="publisher"
+             href="mailto:mcverryj1@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+			<a class="btn btn-sm" rel="publisher"
+             href="https://github.com/jgmac1106">
+            <i class="fa fa-github"></i>
+          </a>
+          </div>
+      </div>  
+    </div>
+    <div class="col-md-4">
+      <div class="card hovercard">
+        <div class="cardheader">
+        </div>
+         <div class="avatar">
+      <img alt="" src="http://www.southernct.edu/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/powellsquare.jpg"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a href="#PowellModal" data-toggle="modal" data-target="#PowellModal">Jessica Powell</a>
+          </div>
+          <div class="desc">Assitant Professor</div>
+          <div class="text-info">Equity and Social Justice</div>
+          <div class="text-primary">Davis 210C 203 392-5601</div>
+          <div class="desc">Jessica Powell (Ph.D., University of North Carolina) studies urban education, socio-cultural learning,  and social justice.</div>
+        </div>
+        <div class="bottom">
+          <!--<a class="btn  btn-twitter btn-sm" href="#">
+            <i class="fa fa-twitter"></i>
+          </a>-->
+          <a class="btn  btn-sm" rel="publisher"
+             href="mailto:powellj8@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <!--<a class="btn btn-sm" rel="publisher"
+             href="#">
+            <i class="fa fa-facebook"></i>
+          </a>-->
+          </div>
+      </div>  
+    </div>
+	  </div>
+	 <div class="row">
+    <div class="col-md-4">
+<div class="card hovercard">
+        <div class="cardheader">
+        </div>
+        <div class="avatar">
+      <img alt="" src="http://www.southernct.edu/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/torre.jpg"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a target="_blank" href="#">Carlos Torre</a>
+          </div>
+          <div class="desc"> Professor</div>
+          <div class="text-info">Creativity</div>
+          <div class="text-primary">Davis 115F 203 392-5897</div>
+          <div class="desc">Carlos Torre (Ph.D., Harvard University) is a teacher and researcher in creativity and chaos theory. </div>
+        </div>
+        <div class="bottom">
+          <a class="btn btn-sm" rel="publisher"
+             href="mailto:torrec1@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+          </div>
+      </div>  
+    </div> 
+   
+  <div class="col-md-4">
+
+      <div class="card hovercard">
+        <div class="cardheader">
+        </div>
+        <div class="avatar">
+      <img alt="" src="http://www.southernct.edu/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/villani.jpg"></img>
+        </div>
+        <div class="info">
+          <div class="title">
+            <a href="#VillaniModal" data-toggle="modal" data-target="#VillaniModal">Christine Villani</a>
+          </div>
+          <div class="desc">Professor</div>
+          <div class="text-info">Educational Law</div>
+          <div class="text-primary">Davis 116B 203 392-6492</div>
+          <div class="desc">Christine Villani, Graduate Coordinator (Ed.D., Fordham University) is a teacher and researcher in educational law</div>
+        </div>
+        <div class="bottom">
+          <a class="btn  btn-twitter btn-sm" href="https://twitter.com/jgmac1106">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="btn  btn-sm" rel="publisher"
+             href="mailto:villanic1@southernct.edu">
+            <i class="fa fa-envelope"></i>
+          </a>
+			<a class="btn btn-sm" rel="publisher"
+             href="#">
+            <i class="fa fa-github"></i>
+          </a>
+          </div>
+      </div>  
+    </div>
+<div class="col-md-4">
+	&nbsp;  
+    </div>
+	  </div>
+
+  <!-- Begin McVerry Modal -->
+  <div class="portfolio-modal modal fade" id="McVerryModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">    
+                <h1>
+                  J. Gregory McVerry
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <h3>
+                  Office: 209d <br></br>
+                  Email:<a href="mailto:mcverryj1@southernct.edu">mcverryj1@southernct.edu</a>
+                </h3>
+                <p class="text-muted">
+                  I am a teacher and researcher interested in the intersection of literacy and technology. I teach early reading, children's literature and new literacies classes. I was the literacy and technology coordinator for Gear Up.
+                </p>
+              </div>
+              <div class="col-md-4">
+
+          <img class="img-circle img-responsive biopic"  alt="" src="http://quickthoughts.jgregorymcverry.com/file/6802fbcdd3fada8cb61ffb798978f72f/thumb.jpg"></img>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Classes Taught
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>EDU 573 Language Arts a Developmental Approach<br />
+
+                  EDU 522 Digital Teaching and Learning II<br/>
+
+                  EDU 106 New Literacies for Lifelong Learning<br/>
+
+                  EDU 307 Children's Literature and Literacy<br/>
+
+                  EDU 308 Children's Literature and Literacy: Early Childhood</p>
+              </div>  
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Recent Publications
+                </h3>
+              </div>
+              <div class="col-md-10">
+
+                <p class="citation">McVerry, J. G., Belshaw, D., &amp; O’Byrne, W.I. (2015). Guiding Students as they Explore, Build, and Connect Online. Journal of Adolescent and Adult Literacy.</p>
+                <p class="citation">McVerry, J. G. (2015). Teaching credibility using Mozilla’s webmaker tools. Connecticut Reading Association Journal.</p>
+                <p class="citation">McVerry, J. G. (2012). New literacies: Online reading comprehension, online collaborative inquiry, and online content construction. Connecticut Reading Association Journal.</p>
+                <p class="citation">Leu, D.J., McVerry, J., O'Byrne, W., Kiili, C., Zawilinski, L., Everett-Cacopardo, H., Kennedy, C., &amp; Forzani, E. (2011). The new literacies of online reading comprehension: Expanding the literacy and learning curriculum. Journal of Adolescent &amp; Adult Literacy, 55(1), 5–14. doi: 10.1598/JAAL.55.1.1</p>
+              </div>  
+            </div>
+            <div class="row top buffer">
+              <div class="col-md-2">
+                <h3>
+                  Service
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <h4>
+                  Service to the Department
+                </h4>                 
+                <table class="table responsive borderless" style="border-top: none">
+                  <tbody>
+                    <tr>
+                      <td>Departmental Website Ad-Hoc Committee chair </td>
+                      <td>2013-2017</td>  
+                    </tr>
+                    <tr>
+                      <td>Undergraduate Admissions Ad-Hoc Committee</td>
+                      <td>2013-2017</td>  
+                    </tr>
+                    <tr>
+                      <td>Early Childhood Curriculum Committee</td>
+                      <td>2011-2013</td>  
+                    </tr>
+                    <tr>
+                      <td>Undergraduate Elementary Curriculum Committee</td>
+                      <td>2011-2016</td>  
+                    </tr>
+                    <tr>
+                      <td>Undergraduate Elementary Curriculum Committee Chair</td>
+                      <td>2016-2017</td>  
+                    </tr>
+                    <tr>
+                      <td>Graduate Elementary Curriculum Committee</td>
+                      <td>2011-2017</td>  
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>
+                  Service to the University
+                </h4>                 
+                <table class="table responsive borderless" style="border-top: none">
+                  <tbody>
+                    <tr>
+                      <td>Writing Across the Curriculum </td>
+                      <td>2011-2012</td>  
+                    </tr>
+                    <tr>
+                      <td>Faculty Development Committee</td>
+                      <td>2016-2017</td>  
+                    </tr>
+                    <tr>
+                      <td>Southern Fture Teacher's Organization Advisor</td>
+                      <td>2015-2017</td>  
+                    </tr>
+                    <tr>
+                      <td>School of Education Strategic Planning</td>
+                      <td>2015-2016</td>  
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Professional Membership
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>Literacy Research Association<br />
+
+                  National Council Teachers of English<br/>
+
+                  International Literacy Association<br/>
+                </p>
+             </div>
+            </div>
+          </div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button type="button" class="btn btn-primary xl" data-dismiss="modal"><i class="fa fa-times"></i></button><h2 class="text-warning">Close</h2>
+					</div>
+				</div>
+        </div>
+      </div>
+    </div>
+		<!-- End McVerry Modal -->
+	  
+	   <!-- Acchpal Modal -->
+  <div class="portfolio-modal modal fade" id="AcchpalModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">    
+                <h1>
+                  Been Acchpal
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <h3>
+                  Office: 115d <br></br>
+                  Email:<a href="mailto:acchplab1@southernct.edu">acchbalb1@southernct.edu</a>
+                </h3>
+                <p class="text-muted">
+                  I am a teacher and researcher interested in early childhood development.
+                </p>
+              </div>
+              <div class="col-md-4">
+
+          <img class="img-circle img-responsive biopic"  alt="" src="http://www.southernct.edu/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/beena.jpg"></img>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Classes Taught
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>EDU 414 Applications of Child Development<br />
+
+                  EDU 539 Childhood Develop for Elementary Grade Teachers<br/>
+			    </p>
+              </div>  
+            </div>
+            <!--<div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Recent Publications
+                </h3>
+              </div>
+              <div class="col-md-10">
+
+                <p class="citation"></p>
+                <p class="citation"></p>
+                <p class="citation"></p>
+                <p class="citation"></p>
+              </div>  
+            </div>
+            <div class="row top buffer">
+              <div class="col-md-2">
+                <h3>
+                  Service
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <h4>
+                  Service to the Department
+                </h4>                 
+                <table class="table responsive borderless" style="border-top: none">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>
+                  Service to the University
+                </h4>                 
+                <table class="table responsive borderless" style="border-top: none">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>  
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Professional Membership
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p><br />
+
+                  <br/>
+
+                  <br/>
+                </p>
+             </div>
+            </div>
+          </div>-->
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button type="button" class="btn btn-primary xl" data-dismiss="modal"><i class="fa fa-times"></i></button><h2 class="text-warning">Close</h2>
+					</div>
+				</div>
+        </div>
+      </div>
+    </div>
+	  </div>
+<!-- End Acchpal Modal -->
+	  <!-- Begin Bower-Phipps Modal -->
+  <div class="portfolio-modal modal fade" id="BowerPhippsModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">    
+                <h1>
+                  Laura Bower Phipps
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <h3>
+                  Office: 209d <br></br>
+                  Email:<a href="mailto:mcverryj1@southernct.edu">bowerl2@southernct.edu</a>
+                </h3>
+                <p class="text-muted">
+                  Laura Bower-Phipps(Ph.D., University of Nevada) is a teacher and researcher interested in teacher identities
+                </p>
+              </div>
+              <div class="col-md-4">
+
+          <img class="img-circle img-responsive biopic"  alt="" src="http://www.redesignu.org/sites/default/files/styles/medium__square/public/block_images/blank%20profile%20of%20woman_2.jpeg"></img>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Classes Taught
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>EDU 311: Responsive Curriculum &amp; Assessment<br />
+					EDU 509: Student Teaching Seminar<br /> 
+					EDU 512: Curriculum Workshop
+				  </p>
+              </div>  
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Recent Publications
+                </h3>
+              </div>
+              <div class="col-md-10">
+				<p class="citation">Bower-Phipps, L.A., Homa, T., Albaladejo, C., Johnson, A.M, &amp; Cruz, M.J. (In press, 2013.) Connecting with the “other” side of us: A cooperative inquiry by self-identified minorities in a teacher preparation program. Accepted for publication in Teacher Education Quarterly.</p>
+<p class="citation">Bower-Phipps, L.A., Watanabe, R., Mehta, S., &amp; Sature, A.L. (2013). Everyone has a story: A collaborative inquiry project by five teacher candidates of color and one white professor. Current Issues in Education, 16(1), Retreived from: http://cie.asu.edu/ojs/index.php/cieatasu/article/view/1074/441.</p>
+<p class="citation">Bower-Phipps, L., &amp; Sature, A.L. (2013, February). Classroom teachers’ collaborative approach to learning to mentor. Roundtable discussion presented at the Annual Meeting of the Association of Teacher Educators, Atlanta, GA.</p>
+<p class="citation">Bower-Phipps, L., Homa, T., Albaladejo, C., Cruz, M.J., &amp; Johnson, A.M. (2012, December.) Understanding the 'other' side of us through cooperative inquiry. Paper presented at the Annual Meeting of the National Association for Multicultural Education, Philadelphia, PA.</p>
+<p class="citation">Bower, L.A., &amp; Sature, A.L. (2011). Surpassing normal: Preparing teachers for diverse learners. Action in Teacher Education, 33(5-6), 416-431.</p>
+              </div>  
+            </div>
+            <div class="row top buffer">
+              <div class="col-md-2">
+                <h3>
+                  Service
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <h4>
+                  Service to the Department
+                </h4>                 
+                <table class="table responsive borderless" style="border-top: none">
+                  <tbody>
+                    <tr>
+                      <td>Undergraduate Curriculum Committee</td>
+                      <td>2006-present</td>  
+                    </tr>
+                    <tr>
+                      <td>Sabbatical Leave Committee</td>
+                      <td>2012-2014</td>  
+                    </tr>
+                    <tr>
+                      <td>Graduate Curriculum Committee</td>
+                      <td>2011-present</td>  
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>
+                  Service to the University
+                </h4>                 
+                <table class="table responsive borderless" style="border-top: none">
+                  <tbody>
+                    <tr>
+                      <td>Undergraduate Curriculum Forum (UCF)</td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td>University Wide Impact Committee of UCF</td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td>Diversity &amp; Equity Leadership Council</td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td>Liberal Studies Committee</td>
+                      <td></td>  
+                    </tr>
+					<tr>
+                      <td>Curriculum Innovation Program Faculty Advisory Board</td>
+                      <td></td>  
+                    </tr>
+					  <tr>
+                      <td>Curriculum Innovation Program Faculty Advisory Board</td>
+                      <td></td>  
+                    </tr>
+					   <tr>
+                      <td>Student Teaching Committee Chair</td>
+                      <td></td>  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Professional Membership
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>Association of Teacher Educators (ATE)<br />
+
+                  ATE SIG: Multicultural Education<br/>
+
+                  National Association for Multicultural Education<br/>
+                </p>
+             </div>
+            </div>
+          </div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button type="button" class="btn btn-primary xl" data-dismiss="modal"><i class="fa fa-times"></i></button><h2 class="text-warning">Close</h2>
+					</div>
+				</div>
+        </div>
+      </div>
+    </div>
+		<!-- End Bower-Phipps Modal -->
+	   <!-- Begin Fopiano  Modal -->
+  <div class="portfolio-modal modal fade" id="FopianoModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">    
+                <h1>
+                  Joy Fopiano
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <h3>
+                  Office: 209d <br></br>
+                  Email:<a href="mailto:fopianoj1@southernct.edu">fopianoj1@southernct.edu</a>
+                </h3>
+                <p class="text-muted">
+                 Joy Fopiano (Ed.D., University of Massachussetts) studies mental health counseling and is the GEAR UP director.
+                </p>
+              </div>
+              <div class="col-md-4">
+
+          <img class="img-circle img-responsive biopic"  alt="" src="/academics/schools/education/departments/elementaryeducation/faculty/biographies/joy.jpg"></img>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Classes Taught
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>CSP 606: Counseling Procedures with Children<br />
+					EDU 414: Applications of Child Development<br /> 
+					EDY 322: Family School, Community Partnerships<br />
+					EDU 538: Parent Involvement in Education: Programs &amp; Approaches<br />
+				  </p>
+              </div>  
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Recent Publications
+                </h3>
+              </div>
+              <div class="col-md-10">
+				<p class="citation"></p>
+				<p class="citation"></p>
+				<p class="citation"></p>
+				<p class="citation"></p>
+				<p class="citation"></p>
+              </div>  
+            </div>
+            <div class="row top buffer">
+              <div class="col-md-2">
+                <h3>
+                  Service
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <h4>
+                  Service to the Department
+                </h4>                 
+                <table class="table responsive borderless" style="border-top: none">
+                  <tbody>
+                    <tr>
+                      <td>Graduate Curriculum Committee</td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td>Department Evaluation Committee</td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td>Departmental Website Ad Hoc Committee</td>
+                      <td></td>  
+                    </tr>
+					  <tr>
+                      <td>Sabbatical Leave Committee (Chair)</td>
+                      <td></td>  
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>
+                  Service to the University
+                </h4>                 
+                <table class="table responsive borderless" style="border-top: none">
+                  <tbody>
+                    <tr>
+                      <td>Davis Hall Planning Committee</td>
+                      <td></td>  
+                    </tr>
+                    <tr>
+                      <td>Gear Up Director</td>
+                      <td></td>  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Professional Membership
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>APA American Psychological Association<br />
+                 NASP National Association of School Psychologists<br/>
+                CASP Connecticut Association of School Psychologists<br/>
+				MSPA Massachusetts Association of School Psychologists<br />
+				AAUW American Association of University Women</p>
+               
+             </div>
+            </div>
+          </div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button type="button" class="btn btn-primary xl" data-dismiss="modal"><i class="fa fa-times"></i></button><h2 class="text-warning">Close</h2>
+					</div>
+				</div>
+        </div>
+      </div>
+    </div>
+		<!-- End Fopiano Modal -->
+	   <!-- Begin Goldberg  Modal -->
+  <div class="portfolio-modal modal fade" id="GoldbergModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">    
+                <h1>
+                  Adam Goldberg
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <h3>
+                  Office: 209d <br></br>
+                  Email:<a href="goldberga2@southernct.edu">goldberga2@southernct.edu</a>
+                </h3>
+                <p class="text-muted">
+                 Adam Goldberg (Ed.D., Columbia Universiy) is a teacher and researcher in math education.
+                </p>
+              </div>
+              <div class="col-md-4">
+
+          <img class="img-circle img-responsive biopic"  alt="" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/Goldberg.jpg"></img>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Classes Taught
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>EDU 319 Integrated Mathematics, Science, and Technology for Early Childhood Education<br />
+					EDU 320 Integrated Mathematics and Science for Elementary Education<br />
+					EDU 504 Mathematics in the Elementary School<br />
+					EDU 511 Geometry in the Elementary School<br />
+					EDU 515 Trends in Elementary Mathematics<br />
+					EDU 521 Digital Teaching and Learning I<br />
+					EDU 587 Curriculum Models in Operation<br /> 
+					EDU 591 Field Project in Education<br />
+					EDU 592 Research in Education<br />
+					MAT 105 Mathematics for Elementary Education I<br />
+					MAT 106 Mathematics for Elementary Education II</p>
+              </div>  
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Recent Publications
+                </h3>
+              </div>
+              <div class="col-md-10">
+				<p>Goldberg, A. &amp; Diamantis, M. (2013). Engage Students and Meet Core Standards Through Integration. Presented at New Hampshire Teachers of Mathematics Conference, Manchester, NH.</p>
+				<p class="citation">Goldberg, A., Diamantis, M., &amp; Penn, M.W. (2012). Children's literature in the k-3 mathematics classroom: 50 Activities based on the Common Core State Standards for Mathematics. USA: MathWord Press.</p>
+				<p class="citation">Goldberg, A. &amp; Diamantis, M. (2012). Activities that Integrate Mathematics, Technology, &amp; Other Disciplines. Presented at NCTM Regional Conference, Hartford, CT.</p>
+				<p class="citation">Goldberg, A. &amp; Diamantis, M. (2012). Integrating Technology and Literature into the Mathematics Classroom. Presented at NCTM National Conference, Philadelphia, PA.</p>
+				<p class="citation">Goldberg, A. (2012). Preparing Elementary School Teachers for the Core Standards. Presented at AMTEC Annual Conference, New Britain, CT.</p>
+              </div>  
+            </div>
+            <div class="row top buffer">
+              <div class="col-md-2">
+                <h3>
+                  Service
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <h4>
+                  Service to the Department
+                </h4>                 
+                <table class="table responsive borderless">
+                  <tbody>
+                    <tr>
+                      <td>Undergraduate Curriculum Committee</td>
+                      <td>2006-present</td>  
+                    </tr>
+                    <tr>
+                      <td>Sabbatical Leave Committee</td>
+                      <td>2006-2012</td>  
+                    </tr>
+                    <tr>
+                      <td>Graduate Curriculum Committee</td>
+                      <td>2006-2012</td>  
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>
+                  Service to the University
+                </h4>                 
+                <table class="table responsive borderless" >
+                  <tbody>
+                    <tr>
+                      <td>Unit Assessment Board</td>
+                      <td>2005-2012</td>  
+                    </tr>
+                    <tr>
+                      <td>GPA Waiver Committee</td>
+                      <td>2012-2014</td>  
+                    </tr>
+					  <tr>
+                      <td>Faculty Senate</td>
+                      <td>2008-2011</td>  
+                    </tr>
+					  <tr>
+                      <td>Graduate Council</td>
+                      <td>2005-2012</td>  
+                    </tr>
+					  <tr>
+                      <td>NEASC Steering Committee</td>
+                      <td>2009-2011</td>  
+                    </tr>
+					  <tr>
+                      <td>School of Education Conceptual Framework Committee</td>
+                      <td>2013-2014</td>  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Professional Membership
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>NCTM<br />
+                 ACEI<br/>
+                ATOMIC<br/>
+				</p>
+               
+             </div>
+            </div>
+          </div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button type="button" class="btn btn-primary xl" data-dismiss="modal"><i class="fa fa-times"></i></button><h2 class="text-warning">Close</h2>
+					</div>
+				</div>
+        </div>
+      </div>
+    </div>
+		<!-- End Goldberg Modal -->
+	 
+	    <!-- Begin Marx Modal -->
+  <div class="portfolio-modal modal fade" id="MarxModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">    
+                <h1>
+                  Helen Marx
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <h3>
+                  Office: 209d <br></br>
+                  Email:<a href="marxh1@southernct.edu">marxh1@southernct.edu</a>
+                </h3>
+                <p class="text-muted">
+                 Helen Marx researches issues in global education and teacher preparation. She is coordinator of the Undergaduate Programs.
+                </p>
+              </div>
+              <div class="col-md-4">
+
+          <img class="img-circle img-responsive biopic"  alt="" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/helensquare.jpg"></img>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Classes Taught
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>EDU 200 Teachers, Schools and Society<br />
+                EDU 312 Integrated Curriculum in the Primary Classroom<br/>
+                EDU 505 Social Studies in the Elementary School<br/>
+				</p>
+              </div>  
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Recent Publications
+                </h3>
+              </div>
+              <div class="col-md-10">
+				<p class="citation">Marx, H. (2013, May). Colloquium on internationalizing teacher education: Expanding our vision – international and cross-cultural experiential learning for pre- and in-service teachers and faculty. Annual meeting of NAFSA: Association of International Educators, Saint Lois, MO.</p>
+              <p class="citation">Marx, H., Bower-Phipps, L. (2013). Developing cultural competence through an Urban Education Teacher Fellows Program. Paper presented at the annual conference of the Association of Teacher Educators, Atlanta, GA.</p>
+              <p class="citation">Wilson, E., Marx, H. &amp; Moss, D.M. (2013) Developing Cultural Awareness Through International Field Placements: A Documentary Account. Paper presented at the annual conference of the American Educational Researchers Association, San Francisco, CA</p>
+              <p class="citation">Marx, H., &amp; McVerry, J. G. (2012). A critical need for global education in our schools. Reading Today Online.</p>
+              <p class="citation">Marx, H. &amp; Moss, D.M. (2011). Please Mind the Culture Gap: Intercultural Development During a Teacher Education Study Abroad Program. Journal of Teacher Education. 62(1) 35-47.</p>
+              </div>  
+            </div>
+            <div class="row top buffer">
+              <div class="col-md-2">
+                <h3>
+                  Service
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <h4>
+                  Service to the Department
+                </h4>                 
+                <table class="table responsive borderless">
+                  <tbody>
+                    <tr>
+                      <td>Coordinator, Undergraduate Elementary Education Program</td>
+                      <td>2013-present</td>  
+                    </tr>
+                    <tr>
+                      <td>Chair, Elementary Education Curriculum Committee</td>
+                      <td>2013-2015</td>  
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>
+                  Service to the University
+                </h4>                 
+                <table class="table responsive borderless" >
+                  <tbody>
+                    <tr>
+                      <td>Co-Coordinator, Undergraduate Collaborative Special Education/Elementary Education Program</td>
+                      <td>2013-present</td>  
+                    </tr>
+                    <tr>
+                      <td>Director, Urban Education Fellows Program and SNAP Initiative</td>
+                      <td>2011-2015</td>  
+                    </tr>
+					  <tr>
+                      <td>Member, Global Education Advisory Committee</td>
+                      <td>2011-2014</td>  
+                    </tr>
+					  <tr>
+                      <td>Member, University Curriculum Forum</td>
+                      <td>2013-present</td>  
+                    </tr>
+					  <tr>
+                      <td>Member, Student Teaching Committee</td>
+                      <td>2011-present</td>  
+                    </tr>
+					  <tr>
+                      <td>School of Education Conceptual Framework Committee</td>
+                      <td>2013-2014</td>  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Professional Membership
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <ul style="list-style-type: none;"><li> American Educational Researchers Association</li>
+            <li>Association of Teacher Educators</li>
+            <li>Northeastern Educational Research Association</li>
+            <li>National Council for the Social Studies</li>
+            <li>National Association for Multicultural Education</li>
+            <li>NAFSA: Association of International Educators</li></ul>          
+             </div>
+            </div>
+          </div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button type="button" class="btn btn-primary xl" data-dismiss="modal"><i class="fa fa-times"></i></button><h2 class="text-warning">Close</h2>
+					</div>
+				</div>
+        </div>
+      </div>
+    </div>	
+		<!-- End Marx Modal -->
+	  
+	   <!-- Begin Powell Modal -->
+  <div class="portfolio-modal modal fade" id="PowellModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">    
+                <h1>
+                  Jessica Powell
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <h3>
+                  Office: 209d <br></br>
+                  Email:<a href="powellj8@southernct.edu">powellj8@southernct.edu</a>
+                </h3>
+                <p class="text-muted">
+                 Jessica Powell researches issues of social justice, inequity, and teacher preparation.
+                </p>
+              </div>
+              <div class="col-md-4">
+
+          <img class="img-circle img-responsive biopic"  alt="" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/helensquare.jpg"></img>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Classes Taught
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p>EDU 200 Teachers, Schools, and Society<br />
+					EDU 400 Student Teaching Supervision<br />
+					EDU 206 Principles of Early Childhood Education<br />
+					EDU 325 Best Practices in Classroom Management<br />
+					EDU 309 Integrated Pre-K Primary Methods<br />
+					EDU 418 Responsive Curriculum and Assessment<br />
+					HON 494 Honor’s Thesis<br />
+					WMS 593 Women’s Studies Thesis/Special Project<br />
+					WMS 592 Women’s Studies Thesis/Special Project<br />
+				</p>
+              </div>  
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Recent Publications
+                </h3>
+              </div>
+              <div class="col-md-10">
+				<p class="citation">Powell, J. &amp; Kelly, A. (Forthcoming). Accomplices in the academy in the age of Black Lives Matter. Journal of Critical Thought and Praxis.</p>
+              <p class="citation">Powell, J. (2016). “To Have Better Than I Had”: The Transgenerational Family Pedagogy of an African American Family in the South. Journal of Family Diversity in Education.</p>
+              <p class="citation">Bower- Phipps, L. &amp; Powell, J. (Forthcoming). Re-drawing the Line: Queering our pedagogy in the early childhood classroom. In Pennell, S., Boyd, A., Parkhouse, H., LaGarry, A. (Eds). Practice: Social Justice Teaching in the Disciplines. Peter Lang.</p>
+              <p class="citation">Sinclair, M., &amp; Powell, J. (Forthcoming). Becoming Allies: Problematizing the Intersection of Reflection and Action through Pre-Service Teachers’ Autoethnographies of Praxis. In Lopez, A., &amp; Olan, E. L. Transformative Pedagogies for Teacher Education: Moving Towards Critical Praxis in an era of Change. Information Age Publishers.</p>
+              </div>  
+            </div>
+            <div class="row top buffer">
+              <div class="col-md-2">
+                <h3>
+                  Service
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <h4>
+                  Service to the Department
+                </h4>   
+				<table class="table responsive borderless">
+                  <tbody>
+                    <tr>
+                      <td> Urban Education Fellows Program, Co-Director</td>
+                      <td>2015- Present</td>  
+                    </tr>
+                    <tr>
+                      <td>Early Childhood/Literacy Tenure Track Search Committee, Chair</td>
+                      <td>2016-2017 </td>  
+                    </tr>
+					  <tr>
+                      <td>Undergraduate Curriculum Committee, Member</td>
+                      <td>2015-Present </td>  
+                    </tr>
+					  <tr>
+                      <td>Field Placement Committee, Ad Hoc Memberr</td>
+                      <td>2015-Present</td>  
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>
+                  Service to the University
+                </h4>                 
+                <table class="table responsive borderless" >
+                  <tbody>
+                    <tr>
+                      <td>Notifications Management Committee, Representative</td>
+                      <td>2015- Present</td>  
+                    </tr>
+                    <tr>
+                      <td>Undergraduate Curriculum Forum, Alternate Representative</td>
+                      <td>2015-Present </td>  
+                    </tr>
+					  <tr>
+                      <td>Support Team for Undocumented Students, Member</td>
+                      <td>2016-Present</td>  
+                    </tr>
+					   
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Professional Membership
+                </h3>
+              </div>
+              <div class="col-md-10">
+            	<p>National Association for the Education of Young Children<br />
+				   American Educational Research Association<br />
+					American Educational Studies Association</p>       
+             </div>
+            </div>
+          </div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button type="button" class="btn btn-primary xl" data-dismiss="modal"><i class="fa fa-times"></i></button><h2 class="text-warning">Close</h2>
+					</div>
+				</div>
+        </div>
+      </div>
+    </div>	
+		<!-- End Powell Modal -->
+	    <!-- Begin Villani Modal -->
+  <div class="portfolio-modal modal fade" id="VillaniModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">    
+                <h1>
+                  Jessica Powell
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <h3>
+                  Office: 209d <br></br>
+                  Email:<a href="powellj8@southernct.edu">powellj8@southernct.edu</a>
+                </h3>
+                <p class="text-muted">
+                 Christine Villani is the grdauate coordinator and researchs and teaches about educational law.
+                </p>
+              </div>
+              <div class="col-md-4">
+
+          <img class="img-circle img-responsive biopic"  alt="" src="/academics/schools/education/departments/elementaryeducation/faculty/facultyimages/helensquare.jpg"></img>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Classes Taught
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <p> EDU 524 Law for the Classroom Teacher<br />
+					EDI 592 Research<br />
+					EDU 591 Field Project<br />
+					EDU 612 Teaching and Learning Process<br />
+					EDU 534 Curriculum Methods and Designs for Elementary School<br />
+					EDU 611 Curriculum Theories<br />
+					EDU 619 Seminar- Issues Affecting Classroom Teachers</p>
+              </div>  
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Recent Publications
+                </h3>
+              </div>
+              <div class="col-md-10">
+				<p class="citation">Education Law Association, Nov. 2012, Hilton Head, SC. In collaboration with Dr. Cynthia Mooney and P. Tyson Bennett, Attorney at Law “Nearly 25 Years Since Honig v. Doe: The State of Discipline, Behavior, and Bullying in Special Education.</p>
+              <p class="citation">Education Law Association, Nov. 2011, Chicago, Ill. In collaboration with Dr. Cynthia Mooney
+“Response to Intervention: Overview, IDEA Requirements and Efficacy of Implementation.”</p>
+              <p class="citation">Education Law Association, Oct. 2009, Lexington, KY. In collaboration with Dr. Cynthia Mooney”Response to Intervention (RTI): Understanding IDEA Requirements and Applications in Schools.</p>
+                  <p class="citation">Education Law Association Annual Convention, Nov. 2008, San Antonio,TX. In collaboration with Dr. Cynthia Mooney, “Has NCLB Closed the Achievement Gap? Fiction versus Reality</p>
+              </div>  
+            </div>
+            <div class="row top buffer">
+              <div class="col-md-2">
+                <h3>
+                  Service
+                </h3>
+              </div>
+              <div class="col-md-10">
+                <h4>
+                  Service to the Department
+                </h4>   
+				<table class="table responsive borderless">
+                  <tbody>
+                    <tr>
+                      <td> Graduate Department Coordinator</td>
+                      <td>2013- Present</td>  
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>
+                  Service to the University
+                </h4>                 
+                <table class="table responsive borderless" >
+                  <tbody>
+                    <tr>
+                      <td>Graduate Council</td>
+                      <td>2012- Present</td>  
+                    </tr>
+                    <tr>
+                      <td>School of Education Strategic Planning</td>
+                      <td>2015-Present </td>  
+                    </tr>
+					  <tr>
+                      <td>University Terminations Hearing Committee</td>
+                      <td>2006-2011</td>  
+                    </tr>
+					   <tr>
+                      <td>Curriculum Related Grants Committee</td>
+                      <td>2004-2009</td>  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row top-buffer">
+              <div class="col-md-2">
+                <h3>
+                  Professional Membership
+                </h3>
+              </div>
+              <div class="col-md-10">
+            	<p>Association of Supervision and Curriculum Development<br />
+					Education Law Association</p>       
+             </div>
+            </div>
+          </div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button type="button" class="btn btn-primary xl" data-dismiss="modal"><i class="fa fa-times"></i></button><h2 class="text-warning">Close</h2>
+					</div>
+				</div>
+        </div>
+      </div>
+    </div>	
+		<!-- End Powell Modal -->
+</body>
+  
+ 
+
+</html>
