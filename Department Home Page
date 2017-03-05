@@ -1,59 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="html"?>
-<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
-
-<document>
-	<headcode></headcode>
-	<bodycode></bodycode>
-	<footcode></footcode>
-	
-	<!-- com.omniupdate.properties -->
-	<title>Department of Curriculum and Learning</title>
-	<!-- /com.omniupdate.properties -->
-	
-	<config>
-	<!-- com.omniupdate.properties -->
-	<parameter name="breadcrumb" group="Everyone" prompt="Breadcrumb" alt="Defines the breadcrumb, otherwise the page title will be used."></parameter>
-<parameter name="page-heading" group="Everyone" prompt="Page Heading" alt="Defines the text used as the page heading for the main content region.">Department of Curriculum and Learning </parameter>
-	<parameter name="callout" group="Everyone" type="radio" prompt="Callout Section" alt="Enables or disables the callout region found within the main content.">
-<option value="true" selected="false">On</option>
-<option value="false" selected="true">Off</option>
-</parameter>
-	<parameter name="action-btn" group="Everyone" type="radio" prompt="Action Buttons" alt="Enables or disables the action buttons found within the main content region.">
-<option value="true" selected="false">On</option>
-<option value="false" selected="true">Off</option>
-</parameter>
-	<parameter name="featured" group="Everyone" type="radio" prompt="Featured Content" alt="Enables or disables the featured content region found below the main content.">
-<option value="true" selected="false">On</option>
-<option value="false" selected="true">Off</option>
-</parameter>
-	
-	<parameter section ="Main Image Settings" name="main-image" group="Everyone" type="radio" prompt="Main Image" alt="Enables or disales the main image above the main content.">
-<option value="image" selected="false">Main Image</option>
-<option value="none" selected="true">None</option>
-</parameter>
-	<parameter name="image-loc" group="Everyone" type="radio" prompt="Image Location" alt="Determines if the page will use the image defined by the directory variable, or an editable region on page level">
-<option value="inherit" selected="true">Inherit from directory</option>
-<option value="local" selected="false">Page level</option>
-</parameter>
-	<parameter name="nav-adjust" group="Everyone" type="radio" prompt="Left Navigation Adjust" alt="If 'adjust' is selected, the left navigation will be moved up into the main image." >
-<option value="default" selected="true">Default</option>
-<option value="adjust" selected="false">Adjust</option>
-</parameter>	
-	
-	<!-- /com.omniupdate.properties -->
-	</config>
-	
-	<metadata>
-	<!-- com.omniupdate.properties -->
-		<meta name="description" content="Curriculum and Learning Department at Southern Connecticut State  University." />
-	<!-- /com.omniupdate.properties -->
-	</metadata>	
-	
-	<maincontent>
-	<!-- com.omniupdate.div  label="maincontent"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955"/ --><style type="text/css"><!--
-
---></style>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum and Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -112,88 +64,5 @@
 		</div>
 	</div>
    </div>
-<!-- /com.omniupdate.div -->
-
-
-	</maincontent>
-	
-	<main-image>
-	<!-- com.omniupdate.div  label="main-image"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/main-image.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
-	<img src="/_resources/images/gen-content-level-2-big-img.jpg" alt="landing image" />
-	<!-- /com.omniupdate.div -->
-	</main-image>
-	
-	<main-feature>
-	<!-- com.omniupdate.div  label="main-feature"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/maincontent.css" width="955" -->
-	<table>
-		<tbody>
-			<tr><th>Image</th><th>Info</th></tr>
-			<tr>
-				<td><img src="/_resources/images/ac-landing-arts-sciences.jpg" alt="A woman using lab equipment" /></td>
-				<td>
-				<h2>The heart of the university</h2>
-				<h3>School of Arts &amp; Sciences</h3>
-				<a href="#">Learn More</a>
-				</td>
-			</tr>
-			<tr>
-			<td><img src="/_resources/images/ac-landing-business-school.jpg" alt="A diagram on a chalkboard" /></td>
-				<td>
-				<h2>Prepare yourself</h2>
-				<h3>School of Business</h3>
-				<a href="#">Learn More</a>
-				</td>
-			</tr>
-			<tr>
-				<td><img src="/_resources/images/ac-landing-school-ed.jpg" alt="Students raising their hand" /></td>
-				<td>
-				<h2>Passionate about teaching</h2>
-				<h3>School of Education</h3>
-				<a href="#">Learn More</a>
-				</td>
-			</tr>
-			<tr>
-				<td><img src="/_resources/images/ac-landing-health-human.jpg" alt="A medical professional" /></td>
-				<td>
-				<h2>A mission of caring</h2>
-				<h3>School of Health &amp;<br />Human Sciences</h3>
-				<a href="#">Learn More</a>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-	<!-- /com.omniupdate.div -->	
-	</main-feature>
-	
-	<action-btns>
-	<!-- com.omniupdate.div  label="action-btns"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/action-btns.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
-	<a href="#apply">Apply Now</a>
-	<a href="#visit">Visit Campus</a>
-	<!-- /com.omniupdate.div -->
-	</action-btns>
-	
-	<callout>
-	<!-- com.omniupdate.div  label="callout"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/ou/editor/callout.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955"/ --><h2>&nbsp;</h2>
-<p>Welcome Back</p><!-- /com.omniupdate.div -->
-	</callout>
-		
-	<featured-content>
-	<!-- com.omniupdate.div  label="featured-content1"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/featured-content.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
-	<img src="/_resources/images/gen-content-level2-talk-couns.jpg" alt="An admissions counselor helping a student" />
-	<a href="#">Talk to an admissions counselor</a>
-	<!-- /com.omniupdate.div -->
-	</featured-content>
-	<featured-content>
-	<!-- com.omniupdate.div  label="featured-content2"  group="Everyone"  button="707"  break="break" -->
-	<!-- com.omniupdate.editor csspath="/_resources/ou/editor/featured-content.css" cssmenu="/_resources/ou/editor/css/styles.txt" width="955" -->
-	<img src="/_resources/images/gen-content-level2-dlviewbook.jpg" alt="The cover of the SCSU Viewbook" />
-	<a href="#">Download the viewbook</a>
-	<!-- /com.omniupdate.div -->
-	</featured-content>
-	
-	
-</document>
+</body>
+</html>
